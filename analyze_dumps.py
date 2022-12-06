@@ -31,6 +31,13 @@ def analyze_dumps(dump_dir):
 
 analyze_dumps("wireshark-dumps")
 
+# Filter out payloads which do not start with 31 or 3f
+payloads = [
+    payload
+    for payload in payloads
+    if payload.startswith("31") or payload.startswith("3f")
+]
+
 print("Got {} payloads".format(len(payloads)))
 
 json.dump(payloads, open("payloads.json", "w"))
