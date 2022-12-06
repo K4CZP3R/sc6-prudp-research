@@ -35,7 +35,7 @@ analyze_dumps("wireshark-dumps")
 payloads = [
     payload
     for payload in payloads
-    if payload.startswith("31") or payload.startswith("3f")
+    if payload.startswith("313f") or payload.startswith("3f31")
 ]
 
 print("Got {} payloads".format(len(payloads)))
