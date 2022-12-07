@@ -38,6 +38,8 @@ payloads = [
     if payload.startswith("313f") or payload.startswith("3f31")
 ]
 
+# Remove duplicates
+payloads = list(set(payloads))
 print("Got {} payloads".format(len(payloads)))
 
 json.dump(payloads, open("payloads.json", "w"))
