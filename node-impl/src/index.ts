@@ -1,5 +1,5 @@
 import { packetDescribe } from './helpers/describe.helper.js';
-import { getConnectionSignature } from './helpers/packet.helper.js';
+import { packetsAreEqual } from './helpers/packet.helper.js';
 import { Packet } from './packet.js';
 import { headerFromBuffer } from './raw-packet.js';
 import { Server } from './server.js';
@@ -30,5 +30,18 @@ packets.forEach(packet => {
 console.log("--------")
 const serv = new Server();
 
-serv.handlePacket(packets[0], 0);
-serv.handlePacket(packets[2], 0)
+let serverPacket = serv.handlePacket(packets[0], 0);
+let perfectPacket = packets[1];
+
+if (!packetsAreEqual(serverPacket, perfectPacket)) {
+    throw new Error("Our server packet is not equal to the perfect packet!");
+}
+
+serverPacket = serv.handlePacket(packets[2], 0)
+perfectPacket = packets[3];
+
+if (!packetsAreEqual(serverPacket, perfectPacket)) {
+    console.log(serverPacket.toBuffer().toString("hex"), packetDescribe(serverPacket))
+    console.log(perfectPacket.toBuffer().toString("hex"), packetDescribe(perfectPacket))
+    throw new Error("Our server packet is not equal to the perfect packet!");
+}
