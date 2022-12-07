@@ -1,18 +1,22 @@
+import { runInThisContext } from "vm";
 import { packetDescribe } from "./helpers/describe.helper.js";
 import { getConnectionSignature } from "./helpers/packet.helper.js";
-import { fromPacketLocation, Packet, toTypeAndFlag } from "./packet.js";
+import { Packet, PacketLocation } from "./packet.js";
 
 export class Server {
     private clientState: {
         [clientId: number]: {
             serverConnectionSignature: number,
-            clientConnectionSignature?: number
+            clientConnectionSignature?: number,
+            serverSessionId?: number;
+            clientSessionId?: number;
+            currentSequenceId: number;
         }
     } = {
         }
     constructor() { }
 
-    private handleConnectPacket(packet: Packet, dummyClientId: number) {
+    private handleConnectPacket(packet: Packet, dummyClientId: number): Packet {
         if (!this.clientState[dummyClientId]) {
             console.warn("Ignoring packet, client state does not exist!");
             return;
@@ -20,14 +24,34 @@ export class Server {
 
         let clientConnectionSignature = getConnectionSignature(packet);
         this.clientState[dummyClientId].clientConnectionSignature = clientConnectionSignature;
+        this.clientState[dummyClientId].clientSessionId = packet.session_id;
 
+        const serverSessionId = 236;
+        this.clientState[dummyClientId].serverSessionId = serverSessionId;
 
+        // Advance sequence id
+        this.clientState[dummyClientId].currentSequenceId = packet.sequence_id;
 
+        let newPacket = new Packet(
+            packet.destination,
+            packet.source,
+            "connect",
+            ["ack", "has-size"],
+            serverSessionId,
+            this.clientState[dummyClientId].clientConnectionSignature,
+            this.clientState[dummyClientId].currentSequenceId,
+            {
+                type: "connection-signature",
+                data: 0
+            },
+            Buffer.from([0x01, 0x00, 0x0f]),
+            0x18
+        )
 
-
+        return newPacket
     }
 
-    private handleSynPacket(packet: Packet, dummyClientId: number) {
+    private handleSynPacket(packet: Packet, dummyClientId: number): Packet {
         // Client wants to talk with us!
 
         // Check if we have a state for this client
@@ -57,26 +81,33 @@ export class Server {
             0x62
         )
 
-        console.log(packetDescribe(newPacket))
+
 
         this.clientState[dummyClientId] = {
-            serverConnectionSignature
+            serverConnectionSignature, currentSequenceId: 0
         }
+
+        return newPacket;
 
     }
 
-    handlePacket(packet: Packet, dummyClientId: number) {
-        if (packet.destination !== "server") throw new Error("Packet destination is not server!");
+    handlePacket(packet: Packet, dummyClientId: number): Packet {
+        if (packet.destination !== PacketLocation.Server) throw new Error("Packet destination is not server!");
 
         console.log("Received", packet.type, "from", dummyClientId)
+
+        let packetToSend: Packet | undefined;
         switch (packet.type) {
             case "syn":
-                this.handleSynPacket(packet, dummyClientId);
+                packetToSend = this.handleSynPacket(packet, dummyClientId);
                 break;
             case "connect":
-                this.handleConnectPacket(packet, dummyClientId);
+                packetToSend = this.handleConnectPacket(packet, dummyClientId);
                 break;
-
         }
+
+        if (packetToSend)
+            console.log("Will send", packetToSend?.type, "to", dummyClientId, packetDescribe(packetToSend));
+        return packetToSend;
     }
 }
