@@ -113,13 +113,15 @@ export class QPacket {
       this.payload = cryptKey(Buffer.from("CD&ML"), this.payload);
       this.useCompression = this.payload.length > 0 && this.payload.at(0) !== 0;
       if (this.useCompression) {
-        this.payload = Buffer.from(pako.deflate(this.payload));
+        this.payload = Buffer.from(pako.inflate(this.payload.subarray(1)));
       } else {
         this.payload = this.payload.subarray(1);
       }
     } else {
       this.useCompression = false;
     }
+
+    sourceBuf.offset = sourceBuf.offset + this.payloadSize;
 
     this.checksum = sourceBuf.readU8();
   }
@@ -140,9 +142,6 @@ export class QPacket {
     data.add(this.source.toBuffer());
     data.add(this.destination.toBuffer());
     const pt = this.packetType;
-    console.log("Packet type", pt);
-    const xt = this.flags.bits << 3;
-    console.log("XT", xt, this.flags);
     data.add(Buffer.from([pt | (this.flags.bits << 3)]));
     data.addU8(this.sessionId);
 
@@ -186,7 +185,6 @@ export class QPacket {
       this.source.streamType === StreamType.RVSec
     ) {
       payload = cryptKey(Buffer.from("CD&ML"), payload);
-      console.log("Crypt.. ", payload);
     }
 
     if (this.flags.includes(PacketFlag.HasSize)) {
@@ -223,7 +221,6 @@ export class QPacket {
   calcChecksumFromData(key: number, data: Buffer): number {
     let l = data.length;
     l = l - (l % 4); // Adjust length to be a multiple of
-    console.log("L: ", l);
     let sum = 0;
 
     // Sum all 32-bit chunks

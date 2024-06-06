@@ -11,10 +11,10 @@ export class ClientInfo {
   connectionId?: any;
   userId?: number;
 
-  constructor() {
+  constructor(debugserverSignature: number) {
     this.serverSequenceId = 1;
     this.clientSequenceId = 1;
-    this.serverSignature = 4294967295; //Math.floor(Math.random() * 10000000000);
+    this.serverSignature = debugserverSignature; //Math.floor(Math.random() * 10000000000);
     this.clientSession = 0;
     this.serverSession = 0;
     this.packetFragments = {};

@@ -4,6 +4,14 @@ import { PacketFlag } from "./models/bit-flags.model";
 import { PacketType } from "./models/packet-type.enum";
 import { ClientInfo } from "./models/client-info.model";
 import { Adbuf } from "./helpers/adbuf";
+import { ClientRegistry } from "./models/client-registry.model";
+import { ReadStream } from "./models/read-stream.model";
+import { StreamType } from "./models/stream-type.enum";
+import { Response, getPacket } from "./models/rmc-packet.model";
+import { Request } from "./models/rmc-packet.model";
+import { TicketGrantingProtocolMethod } from "./models/ticket-granting-protocol-method.model";
+// @ts-ignore
+import { Parser } from "binary-parser";
 
 const CONFIG = {
   type: "authentication",
@@ -16,14 +24,16 @@ const CONFIG = {
   vport: 1,
   secureServerAddr: "127.0.0.1:21171",
   ticketKey: [
-    49, 233, 180, 74, 12, 122, 27, 58, 25, 105, 121, 4, 85, 252, 29, 233, 140,
-    119, 187, 129, 187, 100, 210, 64, 155, 87, 181, 113, 49, 65, 251, 50,
+    198, 226, 29, 218, 118, 124, 253, 219, 188, 169, 211, 0, 121, 181, 44, 221,
+    223, 85, 144, 82, 64, 40, 122, 181, 11, 125, 106, 32, 56, 99, 96, 29,
   ],
 };
 
 export class AuthenticationServer {
-  private clients: { [signature: number]: ClientInfo } = {};
+  private newClients: { [signature: number]: ClientInfo } = {};
+  private clientRegistry = new ClientRegistry();
   private server?: udp.Socket<"buffer">;
+  private nextConnId: number = 0x3aaa_aaaa;
   async initialize() {
     this.server = await Bun.udpSocket({
       socket: {
@@ -60,17 +70,92 @@ export class AuthenticationServer {
       case PacketType.Connect:
         this.handleConnect(packet);
         break;
+      case PacketType.Data:
+        this.handleData(packet);
+        break;
       default:
-        console.warn("unknown packet type", packet.packetType);
+        console.warn("unknown packet type", PacketType[packet.packetType]);
+    }
+  }
+
+  private handleData(packet: QPacket) {
+    console.log("data packet!");
+
+    const ci = this.clientRegistry.clients.get(packet.signature);
+    if (!ci) {
+      throw new Error("client is unknown");
+    }
+
+    ci.lastSeen = new Date();
+    // this.sendAck(packet, ci, false); does not work yet.
+
+    let payload: any = null;
+    if (packet.fragmentId !== undefined) {
+      if (packet.fragmentId !== 0) {
+        throw new Error("Not implemented");
+      }
+
+      // TODO: ci.packet_fragments_is_empty
+
+      payload = packet.payload!;
+    } else {
+      payload = packet.payload!;
+    }
+
+    if (
+      packet.destination.streamType === StreamType.RVSec &&
+      packet.destination.port === 1
+    ) {
+      console.log("RVSecHandler");
+
+      const rmcPacket = getPacket(new Adbuf(payload));
+
+      if (rmcPacket instanceof Response) {
+        throw new Error("RMC response not supported here. Unimplemented.");
+      }
+
+      console.log(
+        "Looking for protocol",
+        rmcPacket.protocolId,
+        "and method",
+        rmcPacket.methodId
+      );
+      if (rmcPacket.protocolId === 10) {
+        console.log("TicketGrantingProtocol");
+
+        if (rmcPacket.methodId === TicketGrantingProtocolMethod.LoginEx) {
+          const buf = new Adbuf(rmcPacket.parameters);
+
+          console.log(rmcPacket.parameters.toString("ascii"));
+          const test = new Parser()
+            .string("ubi_name", {
+              zeroTerminated: true,
+            })
+            .string("type_name", {
+              zeroTerminated: true,
+            })
+            .string("password", {
+              zeroTerminated: true,
+            });
+
+          console.log(test.parse(rmcPacket.parameters));
+
+          // rmcPacket.parameters is \0 terminated, extract username and password
+        } else {
+          throw new Error("Unknown method id");
+        }
+      } else {
+        throw new Error("Unknown protocol id");
+      }
     }
   }
 
   private handleSyn(packet: QPacket) {
     console.log("Syn packet!");
-    const ci = new ClientInfo();
+    const ci = new ClientInfo(1954425400);
     const sig = ci.serverSignature;
 
-    this.clients[sig] = ci;
+    this.newClients[sig] = ci;
     packet.connSignatue = sig;
 
     console.log(sig, packet.connSignatue);
@@ -84,11 +169,36 @@ export class AuthenticationServer {
       console.error("deny connect. no signature.");
       return;
     }
+    console.log("Signature", packet.signature);
 
-    if (!this.clients[packet.signature]) {
+    if (!this.newClients[packet.signature]) {
       console.warn("deny connect. unknown signature");
-      // return;
     }
+
+    let ci = this.newClients[packet.signature];
+    // Remove client from newClients
+    delete this.newClients[packet.signature];
+
+    ci.clientSignature = packet.connSignatue!;
+    ci.serverSession = 6;
+    ci.clientSession = packet.sessionId;
+
+    this.clientRegistry.clients.set(packet.signature, ci);
+
+    if (packet.payloadSize !== 0) {
+      const ticketKey = CONFIG.ticketKey;
+
+      const x = new ReadStream(new Adbuf(packet.payload!));
+
+      const ticket = x.readU8Buffer();
+      const requestData = x.readU8Buffer();
+      console.log(ticket, requestData);
+      // Read Vec<u8>
+    }
+
+    packet.connSignatue = 0;
+
+    this.sendAck(packet, ci, packet.payloadSize != 0);
   }
 
   private sendAck(packet: QPacket, ci: ClientInfo, keepPayload: boolean) {

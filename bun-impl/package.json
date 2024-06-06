@@ -11,7 +11,10 @@
   "dependencies": {
     "@types/arc4": "^3.4.0",
     "@types/pako": "^2.0.3",
+    "@types/struct": "^0.0.8",
     "arc4": "^3.4.0",
-    "pako": "^2.1.0"
+    "binary-parser": "^2.2.1",
+    "pako": "^2.1.0",
+    "struct": "^0.0.12"
   }
 }
