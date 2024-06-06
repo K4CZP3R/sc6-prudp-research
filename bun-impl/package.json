@@ -1,0 +1,17 @@
+{
+  "name": "bun-impl",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/arc4": "^3.4.0",
+    "@types/pako": "^2.0.3",
+    "arc4": "^3.4.0",
+    "pako": "^2.1.0"
+  }
+}
