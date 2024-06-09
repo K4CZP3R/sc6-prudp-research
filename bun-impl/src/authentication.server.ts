@@ -5,13 +5,15 @@ import { PacketType } from "./models/packet-type.enum";
 import { ClientInfo } from "./models/client-info.model";
 import { Adbuf } from "./helpers/adbuf";
 import { ClientRegistry } from "./models/client-registry.model";
-import { ReadStream } from "./models/read-stream.model";
 import { StreamType } from "./models/stream-type.enum";
 import { Response, getPacket } from "./models/rmc-packet.model";
-import { Request } from "./models/rmc-packet.model";
 import { TicketGrantingProtocolMethod } from "./models/ticket-granting-protocol-method.model";
-// @ts-ignore
-import { Parser } from "binary-parser";
+
+import { KerberosTicket } from "./models/kerberos-ticket.model";
+import { KerberosTicketInternal } from "./models/kerberos-ticket-internal.model";
+import { LoginExRequest } from "./models/loginex-request.model";
+import { LoginExResponse } from "./models/loginex-response.model";
+import { RVConnectionData } from "./models/rv-connection-data.model";
 
 const CONFIG = {
   type: "authentication",
@@ -78,7 +80,7 @@ export class AuthenticationServer {
     }
   }
 
-  private handleData(packet: QPacket) {
+  private async handleData(packet: QPacket) {
     console.log("data packet!");
 
     const ci = this.clientRegistry.clients.get(packet.signature);
@@ -124,23 +126,40 @@ export class AuthenticationServer {
         console.log("TicketGrantingProtocol");
 
         if (rmcPacket.methodId === TicketGrantingProtocolMethod.LoginEx) {
-          const buf = new Adbuf(rmcPacket.parameters);
+          const loginRequest = new LoginExRequest(
+            new Adbuf(rmcPacket.parameters)
+          );
 
-          console.log(rmcPacket.parameters.toString("ascii"));
-          const test = new Parser()
-            .string("ubi_name", {
-              zeroTerminated: true,
-            })
-            .string("type_name", {
-              zeroTerminated: true,
-            })
-            .string("password", {
-              zeroTerminated: true,
-            });
+          console.log(
+            "Login requested from",
+            loginRequest.user,
+            loginRequest.username
+          );
 
-          console.log(test.parse(rmcPacket.parameters));
+          // Do login logic here.
 
-          // rmcPacket.parameters is \0 terminated, extract username and password
+          ci.userId = 69;
+          let sessionKey = Buffer.from([
+            6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+          ]);
+          let ticket = new KerberosTicket(
+            sessionKey,
+            4096,
+            new KerberosTicketInternal(ci.userId!, 1844674407370955, sessionKey)
+          );
+
+          const ticketBuf = await ticket.toBuffer(
+            ci.userId!,
+            Buffer.from(CONFIG.ticketKey)
+          );
+
+          new LoginExResponse(
+            0,
+            ci.userId!,
+            ticketBuf,
+            this.getConnectionData(4096),
+            ""
+          );
         } else {
           throw new Error("Unknown method id");
         }
@@ -148,6 +167,14 @@ export class AuthenticationServer {
         throw new Error("Unknown protocol id");
       }
     }
+  }
+
+  private getConnectionData(serverPid: number) {
+    return new RVConnectionData(
+      `prudp:/address={};port={};CID=1;PID=${serverPid},sid=2;steam=3;type=2`,
+      Buffer.from([]),
+      `prudp:/address={};port={};CID=1;PID=${serverPid},sid=2;steam=3;type=2`
+    );
   }
 
   private handleSyn(packet: QPacket) {
@@ -188,11 +215,11 @@ export class AuthenticationServer {
     if (packet.payloadSize !== 0) {
       const ticketKey = CONFIG.ticketKey;
 
-      const x = new ReadStream(new Adbuf(packet.payload!));
+      // const x = new ReadStream(new Adbuf(packet.payload!));
 
-      const ticket = x.readU8Buffer();
-      const requestData = x.readU8Buffer();
-      console.log(ticket, requestData);
+      // const ticket = x.readU8Buffer();
+      // const requestData = x.readU8Buffer();
+      // console.log(ticket, requestData);
       // Read Vec<u8>
     }
 
