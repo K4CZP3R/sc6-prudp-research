@@ -17,7 +17,6 @@ export class Request {
     this.callId = buf.readU32L();
     this.methodId = buf.readU32L();
     this.parameters = buf.readNBytes(size - 8);
-    console.log("Parameters", this.parameters);
   }
 }
 
