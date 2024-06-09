@@ -5,7 +5,6 @@ export class Adbuf {
   public get length() {
     return this.buf.length;
   }
-
   public get offset() {
     return this.currentOffset;
   }
@@ -25,13 +24,29 @@ export class Adbuf {
     this.buf = Buffer.concat([this.buf, buf]);
   }
   addU8(val: number) {
-    this.buf = Buffer.concat([this.buf, Buffer.from([val])]);
+    let subbuf = Buffer.alloc(1);
+    subbuf.writeUInt8(val, 0);
+    this.buf = Buffer.concat([this.buf, subbuf]);
+  }
+  addU16(val: number) {
+    let subbuf = Buffer.alloc(2);
+    subbuf.writeUInt16BE(val, 0);
+    this.buf = Buffer.concat([this.buf, subbuf]);
   }
   addU16L(val: number) {
-    this.buf = Buffer.concat([this.buf, Buffer.from([val])]);
+    let subbuf = Buffer.alloc(2);
+    subbuf.writeUInt16LE(val, 0);
+    this.buf = Buffer.concat([this.buf, subbuf]);
+  }
+  addU32(val: number) {
+    let subbuf = Buffer.alloc(4);
+    subbuf.writeUInt32BE(val, 0);
+    this.buf = Buffer.concat([this.buf, subbuf]);
   }
   addU32L(val: number) {
-    this.buf = Buffer.concat([this.buf, Buffer.from([val])]);
+    let subbuf = Buffer.alloc(4);
+    subbuf.writeUInt32LE(val, 0);
+    this.buf = Buffer.concat([this.buf, subbuf]);
   }
 
   subarray(start: number, end: number) {
@@ -114,6 +129,12 @@ export class Adbuf {
     );
     this.currentOffset += n;
     return result;
+  }
+
+  readString() {
+    let length = this.readU16L();
+    let bytes = this.readNBytes(length);
+    return bytes.toString("utf-8").replace(/\0/g, "");
   }
 
   readU8At(index: number) {
