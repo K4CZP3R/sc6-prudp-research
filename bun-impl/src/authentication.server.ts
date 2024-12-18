@@ -126,9 +126,7 @@ export class AuthenticationServer {
         console.log("TicketGrantingProtocol");
 
         if (rmcPacket.methodId === TicketGrantingProtocolMethod.LoginEx) {
-          const loginRequest = new LoginExRequest(
-            new Adbuf(rmcPacket.parameters)
-          );
+          const loginRequest = LoginExRequest.fromBuffer(rmcPacket.parameters);
 
           console.log(
             "Login requested from",
