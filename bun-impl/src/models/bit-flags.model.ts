@@ -1,3 +1,5 @@
+import { colored } from "../helpers/colors";
+
 export enum PacketFlag {
   Ack = 1,
   Reliable = 2,
@@ -7,6 +9,15 @@ export enum PacketFlag {
 
 export class PacketFlags {
   private flags: PacketFlag[] = [];
+
+  toString() {
+    return colored(this, {
+      exlucdeProps: ["flags"],
+      customProps: [
+        { key: "flags", value: this.flags.map((f) => PacketFlag[f]).join("|") },
+      ],
+    });
+  }
 
   toJSON() {
     return this.flags.map((flag) => PacketFlag[flag]);

@@ -1,5 +1,7 @@
+import debug from "debug";
+
 import type { BinaryTypeList, Socket, udp } from "bun";
-import type { QPacket } from "./models/qpacket.model";
+import { QPacket } from "./models/qpacket.model";
 import { PacketFlag } from "./models/bit-flags.model";
 import { PacketType } from "./models/packet-type.enum";
 import { ClientInfo } from "./models/client-info.model";
@@ -14,6 +16,10 @@ import { KerberosTicketInternal } from "./models/kerberos-ticket-internal.model"
 import { LoginExRequest } from "./models/loginex-request.model";
 import { LoginExResponse } from "./models/loginex-response.model";
 import { RVConnectionData } from "./models/rv-connection-data.model";
+
+import chalk from "chalk";
+
+const log = debug("authentication");
 
 const CONFIG = {
   type: "authentication",
@@ -36,6 +42,9 @@ export class AuthenticationServer {
   private clientRegistry = new ClientRegistry();
   private server?: udp.Socket<"buffer">;
   private nextConnId: number = 0x3aaa_aaaa;
+
+  constructor(private onSendPacket: (packet: QPacket) => void) {}
+
   async initialize() {
     this.server = await Bun.udpSocket({
       socket: {
@@ -47,7 +56,7 @@ export class AuthenticationServer {
       hostname: CONFIG.listen.host,
     });
 
-    console.log("Server is running on port", CONFIG.listen.port);
+    log("Server is running on port", CONFIG.listen.port);
   }
 
   private async onData(
@@ -56,11 +65,11 @@ export class AuthenticationServer {
     port: number,
     address: string
   ) {
-    console.log("onData", socket, data, port, address);
+    log("onData", socket, data, port, address);
   }
 
   handlePacket(packet: QPacket) {
-    // console.log(">>> ", packet.sourceBuf.realBuffer.toString("hex"));
+    log("Handling packet", packet.toString());
     if (packet.flags.includes(PacketFlag.Ack)) {
       return;
     }
@@ -81,15 +90,13 @@ export class AuthenticationServer {
   }
 
   private async handleData(packet: QPacket) {
-    console.log("data packet!");
-
     const ci = this.clientRegistry.clients.get(packet.signature);
     if (!ci) {
       throw new Error("client is unknown");
     }
 
     ci.lastSeen = new Date();
-    // this.sendAck(packet, ci, false); does not work yet.
+    this.sendAck(packet, ci, false);
 
     let payload: any = null;
     if (packet.fragmentId !== undefined) {
@@ -108,31 +115,17 @@ export class AuthenticationServer {
       packet.destination.streamType === StreamType.RVSec &&
       packet.destination.port === 1
     ) {
-      console.log("RVSecHandler");
-
       const rmcPacket = getPacket(new Adbuf(payload));
 
       if (rmcPacket instanceof Response) {
         throw new Error("RMC response not supported here. Unimplemented.");
       }
 
-      console.log(
-        "Looking for protocol",
-        rmcPacket.protocolId,
-        "and method",
-        rmcPacket.methodId
-      );
       if (rmcPacket.protocolId === 10) {
-        console.log("TicketGrantingProtocol");
-
         if (rmcPacket.methodId === TicketGrantingProtocolMethod.LoginEx) {
           const loginRequest = LoginExRequest.fromBuffer(rmcPacket.parameters);
 
-          console.log(
-            "Login requested from",
-            loginRequest.user,
-            loginRequest.username
-          );
+          log("Login requested from", loginRequest.user, loginRequest.username);
 
           // Do login logic here.
 
@@ -151,13 +144,30 @@ export class AuthenticationServer {
             Buffer.from(CONFIG.ticketKey)
           );
 
-          new LoginExResponse(
+          const resp = new LoginExResponse(
             0,
             ci.userId!,
             ticketBuf,
             this.getConnectionData(4096),
             ""
           );
+
+          const responsePacket = new Adbuf(Buffer.alloc(0));
+          if (rmcPacket.protocolId < 0x7f) {
+            responsePacket.addU8(rmcPacket.protocolId);
+          } else {
+            responsePacket.addU8(0x7f);
+            responsePacket.addU16(rmcPacket.protocolId);
+          }
+
+          // TODO: Add error handling
+          responsePacket.addU8(0x1);
+          responsePacket.addU32(rmcPacket.callId);
+          responsePacket.addU32(rmcPacket.methodId | 0x8000);
+          responsePacket.add(resp.toBuffer());
+          responsePacket.addU32(resp.toBuffer().length);
+
+          console.log(responsePacket.realBuffer.toString("hex"));
         } else {
           throw new Error("Unknown method id");
         }
@@ -176,28 +186,24 @@ export class AuthenticationServer {
   }
 
   private handleSyn(packet: QPacket) {
-    console.log("Syn packet!");
     const ci = new ClientInfo(1954425400);
     const sig = ci.serverSignature;
 
     this.newClients[sig] = ci;
     packet.connSignatue = sig;
 
-    console.log(sig, packet.connSignatue);
-
     this.sendAck(packet, ci, false);
   }
 
   private handleConnect(packet: QPacket) {
-    console.log("handleConnect");
     if (!packet.connSignatue) {
       console.error("deny connect. no signature.");
       return;
     }
-    console.log("Signature", packet.signature);
 
     if (!this.newClients[packet.signature]) {
       console.warn("deny connect. unknown signature");
+      return;
     }
 
     let ci = this.newClients[packet.signature];
@@ -212,6 +218,8 @@ export class AuthenticationServer {
 
     if (packet.payloadSize !== 0) {
       const ticketKey = CONFIG.ticketKey;
+
+      log("???");
 
       // const x = new ReadStream(new Adbuf(packet.payload!));
 
@@ -240,21 +248,18 @@ export class AuthenticationServer {
     }
     resp.sequence = packet.sequence;
 
-    console.log(resp.toJSON());
     this.sendPacket(resp);
   }
 
   private sendPacket(packet: QPacket) {
     if (packet.packetType === PacketType.Data) {
-      packet.useCompression = true;
+      packet.useCompression = false; // TODO: it supposed to be true but maybe we can send uncompressed data??
       if (!packet.fragmentId) {
         packet.fragmentId = 0;
       }
     }
     packet.flags.add(PacketFlag.HasSize);
 
-    const data = packet.toBuffer();
-    // Send it
-    console.log("Will send", data.realBuffer.toString("hex"));
+    this.onSendPacket(packet);
   }
 }

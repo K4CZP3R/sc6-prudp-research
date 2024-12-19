@@ -1,0 +1,957 @@
+PACKET: [3f, 31, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40]
+server signature>: 1954425400
+PACKET SEND: [31, 3f, 48, 0, 0, 0, 0, 0, 0, 0, 38, 2a, 7e, 74, 0, 0, bc]
+PACKET: [3f, 31, 31, 11, 38, 2a, 7e, 74, 1, 0, 1, 0, b2, 7f, e9]
+PACKET SEND: [31, 3f, 49, 6, 1, 0, b2, 7f, 1, 0, 0, 0, 0, 0, 0, 0, a2]
+PACKET: [3f, 31, 32, 11, 38, 2a, 7e, 74, 2, 0, 0, d, ff, d8, 70, 75, 9f, 4c, b8, e7, a0, 73, b1, 6a, da, 3d, e1, 63, ce, fd, aa, 5, c7, b8, 83, cc, b6, 29, 96, d0, 1e, e0, c6, 66, e6, 51, ed, 8b, 91, f, 6c, bf, 26, e7, ab, 10, 9c, 57, 68, f1, 7d, de, db, 77, ba, b2, ec, 3c, 7e, 2d, ee, d7, 55, a5, 59, fb, ba, 35, 68, 6d, fb, f3, 4e, a4, 26, 34, f0, f, d3, 97, 4, 3e, f1, 19, 75, 2d, 1, ef, 71, 6d, c2, 9f, ae, 21, 49, 69, fe, cd, ad, ee, 26, 4f, 50, 54, 2f, ab, 8e, bd, a, 14, e6, 5b, 8a, b4, 4f]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b2, 7f, 2, 0, 0, 0, 0, a4]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b2, 7f, 1, 0, 0, f8, 0, e, ff, d8, da, ff, ff, 3f, af, ed, a2, 61, fd, 20, 17, f8, b1, ff, 56, e4, 75, 97, 56, a3, 1c, 5b, ef, 5f, 4, 8a, da, 2c, e, 76, 7c, 37, 5b, 7f, ac, e5, 4f, 5f, d2, 6d, 2e, 78, f6, f4, 8f, 4f, 83, 83, 9e, f9, 77, b7, b, 8, e, bf, 6c, 19, 38, 37, d0, af, c3, ae, 49, 25, d7, 1f, ee, 82, 88, e4, d8, a1, 52, 21, 86, 72, b, d0, b, 2d, 3c, 4d, 83, 77, c8, 3, 7c, c1, 3e, c4, 70, 32, 4f, 68, f4, 77, e1, 40, 8f, 2, 96, 29, 18, 49, 92, 39, 8e, e3, d4, b7, ab, 8c, 2d, 17, 18, 17, 9e, 4b, 46, 98, be, 80, be, b0, 6e, 5, f3, 25, e, c1, 7d, aa, cb, 72, d2, 50, b, 3, ca, f8, a7, 2d, 2f, 8, d0, 6a, 13, c8, e5, ec, e0, f5, 7a, d8, 19, 5a, 86, 52, b7, 71, 45, 7, 22, e9, 17, 76, 74, 56, dc, 82, b4, 47, 3c, d9, a8, f, 5d, 8, ca, 34, 99, f6, 83, 54, 36, 80, d4, 58, 62, 86, d, 23, 94, ab, 46, 7f, 80, e2, 37, 8b, 2d, 5, a7, 9e, a6, 67, 6a, 56, 9f, fe, 36, e, cc, aa, 3f, 5c, 91, 88, 34, 9c, b9, bf, 6b, 61, 52, dd, 39, ac, fe, 86, 8c, f, 47, f1, ef, 1, d3, ae, 7d, 49, 4d, 20, e9, 4a]
+PACKET: [3f, 31, a, 11, 38, 2a, 7e, 74, 1, 0, 0, 90]
+PACKET: [3f, 31, 32, 11, 38, 2a, 7e, 74, 3, 0, 0, f, 96, 44, db, 13, 75, 22, 50, 5, a2, 62, fd, 2a, 16, 18, b2, ff, 56, e6, e5, 97, 56, 9d]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b2, 7f, 3, 0, 0, 0, 0, a5]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b2, 7f, 2, 0, 0, 8e, 0, e, ff, d8, da, 91, ff, 51, af, 7b, a2, 61, fd, 20, 17, fc, b1, ff, 56, e5, 75, 97, 56, a3, 1c, 5b, ef, d9, 7, 8a, da, b2, 51, da, 4b, 3b, ee, 18, a6, dd, 6e, d0, 4c, c4, cd, 71, 62, 89, 2d, 40, a, ba, de, a1, 70, 77, c0, 31, 94, 8, f, 61, 5d, 7c, e5, f9, fb, 66, 37, 8a, 8b, 89, 3c, 99, 30, 86, 7f, 42, c0, ae, 39, 39, c7, ef, b9, 3b, 1f, e7, 13, 1f, 1e, 34, b8, 42, b8, bb, db, 44, b5, 9c, ff, e3, a, 39, b9, 33, 28, a4, 96, c8, f1, b2, 2b, dd, 53, 97, e1, d6, 41, a1, 25, 49, b5, 57, da, 92, 7e, df, 72, 29, 10, 3f, 4e, 1e, b5, b, 3e, e9, d4, 9d, 43, 96, 89, 2]
+PACKET: [3f, 31, a, 11, 38, 2a, 7e, 74, 2, 0, 0, 91]
+PACKET: [3f, 31, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40]
+server signature>: 2535538071
+PACKET SEND: [31, 3f, 48, 0, 0, 0, 0, 0, 0, 0, 97, 3d, 21, 97, 0, 0, f4]
+PACKET: [3f, 31, 31, 92, 97, 3d, 21, 97, 1, 0, 1, 0, b3, 7f, f, c3, 44, db, 13, 63, ba, 78, 6c, a2, 83, e, c7, 73, 97, f6, 50, 93, 98, c5, 3b, 21, 40, d0, e0, 2b, d5, 2d, e2, 42, ae, 11, f9, a9, 2f, ee, 44, 5a, 81, a4, d, d7, 4a, 3e, 6d, b4, 47, 9f, 4, d4, 83, 81, 2c, 60, 75, 1a, ae, 60, a7, 29, 3b, ce, 81, 67, 10, 14, 7d, 2a, 7a, c2, 45, ce, df, eb, fd, 29, 4a, 11, 7, 33, c0, 1b, 6d, 4, ff, 9b, d0, b, 50, 2, ac, 74, 54, dc, aa, a1, 70, 49, 61, 4f, 4e, b5, 91, 58, 2d, ec]
+PACKET SEND: [31, 3f, 49, 6, 1, 0, b3, 7f, 1, 0, 0, 0, 0, 0, 9, 0, f, 83, 44, db, 13, 78, 24, 15, e7, a]
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 2, 0, 0, f, 1a, 44, db, 13, 74, 3d, 50, 5, a2, 65, fd, 2a, 16, f3, b1, ff, 56, cb, f5, e7, 24, d7, 78, 2a, d5, 9a, 66, ee, be, 32, 6b, 5, f, f8, 35, ea, a9, 35, 94, a2, d7, 85, d4, 12, 63, ab, 9c, 72, db, e3, 60, 86, fa, ac, f6, 26, 8c, 91, f2, fa, 44, dd, 8, 4b, 99, df, e, cc, 34, e5, bf, 11, 9f, 98, 47, 3e, 6d, 21, a8, 97, db, a1, c8, aa, b5, cf, cf, d4, 4e, d5, 5d, d4, b1, a5, 9a, 1d, 61, 37, 1a, ca, 78, 91, ff, 55, 56, 39, b, 1b, 5b, 4d, c8, a7, e2, 80, 2b, e8, ae, e8, 59, 62, 24, 5b, 8d, cc, a6, 1f, c1, 2a, d1, ae, 54, f0, 1d, fb, f5, f8, 6c, 1f, 96, e0, 6, 4, 84, c7, 85, 58, 46, 78, d3, 31, 4f, da, f6, e7, e0, f4, 38, 99, 17, 5f, b4, f1]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 2, 0, 0, 0, 0, a5]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 1, 0, 0, 55, 0, e, ff, d8, da, 5a, ff, 9a, af, 40, a2, 61, fd, 21, 17, e3, b1, ff, 56, e2, 75, 97, 56, a3, 1c, 5b, ef, 1f, ad, 20, e0, 71, e, 6, e, b0, 60, a3, a1, 34, c4, f0, 8b, d9, 80, 4f, 26, a6, 96, 30, 83, bf, 24, 95, f9, b2, f0, 29, c7, 8d, e9, ea, 44, df, d, 7c, 8c, e4, 2f, d7, 2d, c1, f7, 56, cc, 8e, 40, 2e, 39, 73, fc, e3, f8, 25, b4, b2, c9]
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 1, 0, 0, 49]
+PACKET: [3f, 31, 33, 11, 38, 2a, 7e, 74, 4, 0, bc]
+PACKET SEND: [31, 3f, 4b, 6, 1, 0, b2, 7f, 4, 0, 0, 0, a7]
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 3, 0, 0, f, 8c, 44, db, 13, 0, a7, 43, 10, a2, 61, fd, 2b, 16, f2, b1, 23]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 3, 0, 0, 0, 0, a6]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 2, 0, 1, e0, 1, c, ff, d8, 5e, 41, 32, 42, 43, 34, b2, ff, 5d, 8, 57, 81, 10, d5, c3, f6, e4, c5, 12, 89, 92, cb, 52, 43, ff, 6d, 9e, 8c, a0, ad, e4, a9, e8, b9, 4c, 52, 4c, 5d, e0, 6a, e6, fc, 48, 45, 2e, 55, 56, 80, 64, 1, 69, 61, d0, 78, 40, d0, 30, 51, 9a, 15, 43, 77, e7, 40, 58, d2, a6, d5, f4, de, f7, 7d, f0, 3d, 84, 17, 67, 84, c2, 7e, eb, 8c, b7, 5b, f6, 18, b4, 11, 1e, 9b, 5b, 26, 45, 3f, 94, cc, 3b, b5, 2a, b1, 33, 5, 6b, 13, 1, d5, e3, a8, 81, b1, 49, e9, bb, bf, 64, 4f, 4b, 4a, a, 29, 83, 46, 1c, c3, 5a, f0, 59, 24, ff, c8, df, db, e0, 2, f0, af, 20, 8, 44, 2a, b6, 5d, bb, 94, 9d, 81, 38, 39, cf, 42, 74, a1, a2, 5a, b0, b9, 6e, b9, 95, 5a, a, e9, d8, 37, e8, 7a, 6b, c9, 94, 57, df, 79, 7f, 2, 16, 74, 1, 2e, fd, ce, c0, 9f, 15, ab, 3e, 15, 67, 59, 95, b6, 64, d2, 26, e5, 6, e1, 17, 17, 78, 6c, aa, b0, 89, dc, 96, 3e, a, b, c0, 30, 8f, 6a, a2, 6f, 9c, f0, 9f, 44, 20, a9, 1d, be, 35, 16, 57, 8a, 9e, a2, ec, 87, 45, 97, af, 9f, af, f2, 95, a6, a3, 43, 17, aa, 17, 4, d4, b6, ac, 1d, 5b, f6, 7f, 1e, c, 4f, 86, 8e, 28, fb, 8, 50, b5, a6, 84, 9d, 33, aa, 6d, 9c, 77, 17, 7, bc, 13, f, 16, 27, 38, b7, d5, 6e, 5f, bb, 57, 1, 6e, 9b, 7a, 97, e3, b8, cc, 72, de, 30, 7b, bd, a4, 6e, f7, ca, af, 3c, 6, 5f, bf, 58, a9, c3, 7a, f5, 0, 1e, b6, 15, c9, 44, 2f, 96, ad, 4e, ab, 9f, 1e, 82, 2c, ae, a6, 33, a9, f6, b4, 35, 2c, e2, bf, cb, ff, 16, 1c, 82, 97, 5a, 5d, 6e, 2b, 17, 43, 42, a1, 48, 15, 26, 9e, 60, d3, 36, bf, 6a, 15, 8f, cc, db, 2e, 58, de, a8, cd, 1e, 49, 8, 8b, 1e, fd, 33, 23, ef, 56, c0, 90, 6e, fc, 26, 5d, 85, 5f, 26, c2, 61, 5a, 59, bb, 4, 43, e8, 36, 4d, 99, 75, 9c, c5, 9f, c5, 0, 8a, 18, e2, 1f, 72, 8f, d7, 36, c2, e0, 8e, 44, 64, 4d, 45, f7, 13, 55, b9, 64, e7, ed, 6, df, e, 8f, 96, cb, 6e, f4, 21, b4, ba, 23, 65, 90, bf, f4, 81, 48, ce, b2, 85, 55, a0, 12, 48, ec, 9a, d6, 21, c6, b5, 19, 65, 42, 10, 53, ec, ef, 30, cf, 2c, 7a, 95, 6b, f7, 80, 8b, 92, 86, ae, 9f, f4, 2b]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 3, 0, 0, fe, 0, d, ff, d8, b6, 43, 34, 62, 93, 35, b2, bd, dd, 92, 46, 67, 82, bd, d6, f6, 17, 8b, 63, 6c, bf, 93, c2, 73, 5e, af, 8c, dc, 7b, 62, 47, 94, 7f, 9, 84, ff, e6, 6c, c3, f7, 50, 14, 7, 4e, 7a, d9, dc, e7, 72, cd, 91, f, 6, 7b, 26, e4, 75, 7e, 4d, f3, 2, be, be, 9b, 75, 1c, e9, 7c, 9f, 0, f6, ac, 2d, ad, 7d, c6, 74, ab, 44, 9b, 7e, 82, df, 9f, 36, 5e, 2f, 8f, a4, e2, 56, bc, 9b, 23, 55, 8f, 7b, 68, 31, 6a, dc, 4d, 1e, a7, 10, 2f, 24, 25, fd, 18, c8, 4, 8c, c, a6, 16, 77, 32, c3, 2, 37, cf, fd, 8d, fa, 5e, e8, 3a, 67, ae, 45, d0, 3e, c5, 18, 9, b5, c3, cb, c1, 91, c3, d, 90, e2, 2f, 3e, 64, 3a, 0, c4, 4f, da, a2, 41, 5, ba, 24, 74, b3, ac, 7c, 44, f, 35, b5, 25, e8, ac, b4, 6c, e6, 1a, 62, 7c, c4, 33, 90, 9a, 6c, 1e, 3, f6, 57, 88, 94, d7, 62, 5d, 62, c3, 5a, a8, 38, 8a, e6, af, 29, 60, d4, c3, 27, 47, cc, c2, 48, ca, e7, 4b, 9b, 69, 9e, 9e, 1a, 8e, 4f, bc, 7d, ba, f9, a9, 0, 0, 63, 11, d5, ee, 46, 18, f8, 83, 40, 85, 25, 71, 62, 91, 45, 3e, 14, 8d, 3a, 3e, 8f, da, 5, d4, 8f, b5, ce, d7, 57]
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 2, 0, 1, 4b]
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 3, 0, 0, 4b]
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 4, 0, 0, f, 89, 44, db, 13, 58, 3a, 50, 5, a2, 63, fd, 2a, 16, f1, b1, 9a, 38, e6, c8]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 4, 0, 0, 0, 0, a7]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 4, 0, 0, 15, 0, e, ff, d8, 38, 71, 9f, 4c, 0, 62, b6, 62, 6f, 66, 1b, fe, bd, ff, 52, 87, f5, 5c, b1]
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 4, 0, 0, 4c]
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 5, 0, 0, f, 88, 44, db, 13, 0, c5, 53, 12, a2, 61, fd, 2b, 16, f2, b1, 15, 55, e6, f5, 98]
+PACKET: [3e, 31, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3f]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 5, 0, 0, 0, 0, a8]
+server signature>: 2075019517
+PACKET SEND: [31, 3e, 48, 0, 0, 0, 0, 0, 0, 0, fd, 48, ae, 7b, 0, 0, d6]
+PACKET: [3e, 31, 31, 79, fd, 48, ae, 7b, 1, 0, 1, 0, b2, 7f, 6b]
+PACKET SEND: [31, 3e, 49, 6, 1, 0, b2, 7f, 1, 0, 0, 0, 0, 0, 0, 0, a1]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 5, 0, 0, 18, 0, e, ff, d8, c8, 73, 9f, 4c, f8, 7a, 6b, ad, d5, 24, b2, eb, aa, e7, 96, e6, f5, 8c, e8, a0, 9, 3d]
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 5, 0, 0, 4d]
+PACKET: [3e, 31, 32, 79, fd, 48, ae, 7b, 2, 0, 0, f, 93, 44, db, 13, 75, 30, 50, 5, a2, 60, fd, 2a, 16, fb, b1, ab, 24, 87, 96, fc, 3f, cc, 7b, 5a, c5]
+PACKET SEND: [31, 3e, 4a, 6, 1, 0, b2, 7f, 2, 0, 0, 0, 0, a3]
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 6, 0, 0, f, 8e, 44, db, 13, 14, 31, 50, 5, a2, 60, fd, 2a, 16, 23]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 6, 0, 0, 0, 0, a9]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 6, 0, 0, 19, 0, e, ff, d8, 38, 70, 9f, 4c, 98, 63, 36, 64, 6f, a6, 1b, fe, bd, e0, 53, 75, 27, 97, 46, 58, 1e, b9, c5]
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 6, 0, 0, 4e]
+    session: 146
+     pid: 1002
+      protocol_id: 1001
+       method_id: 1
+        call: 23
+         Jun 06 19:45:53.490 INFO Calling TrackingExtensionProtocol.GetTrackingUserGroup
+module: quazal::prudp:420
+ service: sc_bl_auth
+  client: 127.0.0.1:3074
+   seq: 1
+    session: 121
+     Jun 06 19:45:53.492 INFO New client connected, session: 121, signature: 2075019517
+module: quazal::rmc:350
+ service: sc_bl_auth
+  client: 127.0.0.1:3074
+   seq: 2
+    session: 121
+     pid: None
+      Jun 06 19:45:53.494 INFO Looking for protocol 10, method 1
+module: quazal::rmc:361
+ service: sc_bl_auth
+  client: 127.0.0.1:3074
+   seq: 2
+    session: 121
+     pid: None
+      protocol_id: 10
+       method_id: 1
+        call: 28
+         Jun 06 19:45:53.497 INFO Calling TicketGrantingProtocol.Login
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 6
+    session: 146
+     pid: 1002
+      Jun 06 19:45:53.500 INFO Looking for protocol 107, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 6
+    session: 146
+     pid: 1002
+      protocol_id: 107
+       method_id: 1
+        call: 29
+         Jun 06 19:45:53.503 INFO Calling LadderHelperProtocol.GetUnixUtc
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 7, 0, 0, f, a6, 44, db, 13, 62, 32, 50, 5, a2, 6a, fd, 2a, 16, f1, b1, ff, 56, e3, f5, da, f, eb, 58, 5a, eb, b5, 54, cb, 97, 40, b, 76, 3d, 87, 47, 97, 9b, 47]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 7, 0, 0, 0, 0, aa]
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 7
+    session: 146
+     pid: 1002
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 7, 0, 0, 3e, 0, e, ff, d8, da, 21, ff, e1, af, 2b, a2, 61, fd, 37, 17, ec, b1, ff, 56, ed, 75, 97, 56, a1, 1c, 5a, ef, b0, 7, c7, 83, 9, 4a, 76, 94, c6, 4, d3, 9e, 1b, e4, d6, ac, ef, e5, d5, 56, 9b, a7, 6, b4, c2, 55, f6, c9, 76, c2, 12, b7, 6e, 35, 98, 90, e]
+   PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 8, 0, 0, f, 8a, 44, db, 13, 15, 33, 50, 5, a2, 64, fd, 2a, 16, 18, b2, ff, 56, 48]
+   PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 8, 0, 0, 0, 0, ab]
+Jun 06 19:45:53.518 INFO Looking for protocol 29, method 11
+module:PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 8, 0, 0, 2a, 0, e, ff, d8, 88, 77, 9f, 4c, 98, 67, 36, 66, 6f, 86, 1b, fe, bd, 0, d7, 66, 60, b6, 92, 97, 24, de, 6e, 30, c6, 47, 5, 5f, 46, 4c, 45, c3, 35, d3, 9b, 83, b5, 9c, dc, b9]
+ PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 9, 0, 0, f, 96, 44, db, 13, 5c, d, 50, 5, a2, 60, fd, 2a, 16, f4, b1, 9a, 38, cb, a0, c4, 56, 50]
+quazal::rmc:361PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 9, 0, 0, 0, 0, ac]
+
+ service:PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 9, 0, 0, 24, 0, d, ff, d8, 88, 75, 9f, 4c, 0, 63, f6, 65, 6f, a6, 1b, b2, 7d, 7f, 96, 3a, f9, 96, 6f, 2b, 89, a4, 96, 8c, 9e, f3, 73, 4c, e, 40, 81, c1, f7, 8c]
+ sc_bl_securePACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 7, 0, 0, 4f]
+
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 8, 0, 0, 50]
+ PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 9, 0, 0, 51]
+ client: 127.0.0.1:3074
+   seq: 7
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 11
+        call: 30
+         Jun 06 19:45:53.522 INFO Calling UbiAccountManagementProtocol.LookupPrincipalIds
+module: dedicated_server::ubi_acc_mgmt:51
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 7
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 11
+        call: 30
+         Jun 06 19:45:53.526 INFO Lookup requested for 3 ubi ids (["MYID", "SAM", "ABCD"]). Found 3 ({"MYID": 1000, "ABCD": 1001, "SAM": 1002})
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 8
+    session: 146
+     pid: 1002
+      Jun 06 19:45:53.528 INFO Looking for protocol 106, method 5
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 8
+    session: 146
+     pid: 1002
+      protocol_id: 106
+       method_id: 5
+        call: 31
+         Jun 06 19:45:53.531 INFO Calling ClanHelperProtocol.GetClanInfoByPid
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 9
+    session: 146
+     pid: 1002
+      Jun 06 19:45:53.534 INFO Looking for protocol 35, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 9
+    session: 146
+     pid: 1002
+      protocol_id: 35
+       method_id: 1
+        call: 33
+         Jun 06 19:45:53.537 INFO Calling PrivilegesProtocol.GetPrivileges
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, a, 0, 0, d, ff, d8, e8, 74, 9f, 4c, 88, af, a6, 45, e5, ab, 8e, 7b, 30, 5e, 57, a2, 76, 17, 5e, 26, d3, ca, e6, 71, 6b, 46, 8a, 1, 9e, 76, 27, f9, f, 57, 98, 1b, c7, 70, ed, 2d, d6]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, a, 0, 0, 0, 0, ad]
+module: quazal::rmc:350
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, a, 0, 0, 67, 0, d, ff, d8, fe, 9a, 22, 3d, 10, 35, b2, e5, 6a, db, 45, 72, b3, f3, 43, 7e, b1, b3, 48, 87, 8e, 6c, 3b, d5, c1, f2, 94, 45, 7a, 91, 39, e0, da, f, ea, 68, de, 4b, 31, 45, ef, 7c, 70, b6, 7a, 26, 26, 19, 3d, ab, 50, a0, 8a, 14, 67, 40, 7b, e0, 32, 13, ad, c8, 44, 65, d4, 13, 3b, 67, b0, cf, 4, 86, 63, 24, 1f, e, 4a, 74, 70, 4b, 1f, 95, 18, ba, 25, ad, 69, 15, 7f, e6, a8, 9e, 65, 2, d1, 5d, bf, 58, 77, f3, e2]
+ service:PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, b, 0, 0, c, ff, d8, 30, 76, 9f, 4c, 88, ab, ae, 45, 65, aa, 8e, e3, 39, a0, 67, d5, c5, 97, 47, 21, 34, ce, 20, b5, a2, cb, 62, 4e, c4, e1, be, e6, c3, 56, bd, 1c, 47, 33, ef, da, cf, 2c, 2, 9a, d6, f, a4, e, 14, 59, 5a, dc, bd, 18, 3f, ad, 98, 6f, 60, cc, 3, 40, 6d, dc, 5b, e9, f1, ae, ea, 19]
+ PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, b, 0, 0, 0, 0, ae]
+sc_bl_secure
+  clientPACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, b, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 60, 62, f6, 67, 6f, 66, 1b, fe, d1, ff, 56, ef, a4, 97, ba, 83]
+:PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, a, 0, 0, 52]
+ PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, b, 0, 0, 53]
+127.0.0.1:3074
+   seq: 10
+    session: 146
+     pid: 1002
+      Jun 06 19:45:53.551 INFO Looking for protocol 53, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 10
+    session: 146
+     pid: 1002
+      protocol_id: 53
+       method_id: 1
+        call: 34
+         Jun 06 19:45:53.555 INFO Calling UserStorageProtocol.SearchContents
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 11
+    session: 146
+     pid: 1002
+      Jun 06 19:45:53.557 INFO Looking for protocol 55, method 2
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 11
+    session: 146
+     pid: 1002
+      protocol_id: 55
+       method_id: 2
+        call: 35
+         Jun 06 19:45:53.560 INFO Calling PlayerStatsProtocol.ReadStatsByPlayers
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, c, 0, 0, f, 88, 44, db, 13, 0, c5, 53, 21, a2, 61, fd, 28, 16, f2, b1, ff, 56, e6, f5, 96]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, c, 0, 0, 0, 0, af]
+module: quazal::rmc:350PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, c, 0, 0, 18, 0, e, ff, d8, c8, 73, 9f, 4c, f8, 7a, 6b, ad, 55, 28, b2, 6b, ab, e7, 96, e6, f5, 8b, 34, a0, 3f, c8]
+
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, c, 0, 0, 54]
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 12
+    session: 146
+     pid: 1002
+      Jun 06 19:45:53.584 INFO Looking for protocol 1001, method 2
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 12
+    session: 146
+     pid: 1002
+      protocol_id: 1001
+       method_id: 2
+        call: 36
+         Jun 06 19:45:53.587 INFO Calling TrackingExtensionProtocol.GetTrackingUserGroupTags
+PACKET SEND: [31, 3e, 72, 6, 1, 0, b2, 7f, 1, 0, 0, f5, 0, e, ff, d8, da, fa, ff, 3a, af, e0, a2, 61, fd, 20, 17, ee, b1, ff, 56, e7, 75, 97, 56, a3, 1c, 5b, ef, dc, 7, 8a, da, 2c, e, 76, 7c, 42, 74, 4c, cb, 55, 6a, 7, 68, 76, 91, f9, b3, b0, 29, db, e8, 28, 53, 6b, dc, 5b, 60, b9, b4, 1f, d0, b9, 3c, 3c, 20, 65, 77, 32, a5, 9a, a4, 3, 14, 4, 6e, 8f, 7f, 50, 59, 1d, 67, bf, 36, 21, d7, 76, 61, ae, e5, b1, dd, 48, 66, f1, 1f, 42, 58, 4b, d8, c8, aa, 34, de, c5, 22, 80, 19, 25, 68, 52, 8b, 16, b1, 24, 63, 27, 93, 2, 61, ce, bc, 1a, 70, 9f, 8e, 42, 46, fa, 6d, 59, a1, 7d, 88, 8b, 86, 17, a0, 30, 26, 7c, b3, 2d, f0, e, ca, f8, a7, 2d, 2f, 8, d0, 6a, 13, c8, e5, ec, e0, f5, 7a, d8, 19, 5a, 86, 52, b7, 71, 45, 7, 22, e9, 17, 76, 74, 56, dc, 82, b4, 47, 3c, d9, a8, f, 4e, 8, ca, 34, 9a, f6, 83, 54, 36, 80, d4, 58, 62, 86, d, 14, a4, 9f, 1e, 73, 89, aa, e, a6, 54, 9, a8, da, e6, 21, 34, 18, c4, 9a, b, 3f, cc, aa, 2d, 5c, ab, b5, 55, c2, f2, ac, 6a, 76, 53, 85, 71, af, ac, cf, 88, 5d, 5, 85, d2, 31, fd, e7, 2a, 55, 29]
+PACKET: [3e, 31, a, 79, fd, 48, ae, 7b, 1, 0, 0, 12]
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, d, 0, 0, f, 8a, 44, db, 13, 15, 4, 50, 5, a2, 69, fd, 2a, 16, d, 4e, 0, a9, 7]
+PACKET: [3e, 31, 32, 79, fd, 48, ae, 7b, 3, 0, 0, f, 96, 44, db, 13, 75, 5, 50, 5, a2, 62, fd, 2a, 16, 9b, b1, ff, 56, e4, f5, 97, 56, 92]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, d, 0, 0, 0, 0, b0]
+PACKET SEND: [31, 3e, 4a, 6, 1, 0, b2, 7f, 3, 0, 0, 0, 0, a4]
+module: PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, d, 0, 0, 1c, 0, e, ff, d8, c8, 71, 9f, 4c, 98, 67, 76, 61, 6f, 36, 1b, fe, bd, 73, 16, 1c, e0, a4, 55, a1, 1c, 4f, af, b7, 1b, 62]
+quazal::rmc:350PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, d, 0, 0, 55]
+
+ service: sc_bl_secure
+  client: Error saving user session: error returned from database: (code: 1555) UNIQUE constraint failed: user_sessions.id
+127.0.0.1:3074
+   seq: 13
+    session: 146
+     pid: 1002
+      Jun 06 19:45:53.625 INFO Looking for protocol 106, method 8
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 13
+    session: 146
+     pid: 1002
+      protocol_id: 106
+       method_id: 8
+        call: 40
+         Jun 06 19:45:53.628 INFO Calling ClanHelperProtocol.GetMemberListByClid
+module: quazal::rmc:350
+ service: sc_bl_auth
+  client: 127.0.0.1:3074
+   seq: 3
+    session: 121
+     pid: 105
+      Jun 06 19:45:53.630 INFO Looking for protocol 10, method 3
+module: quazal::rmc:361
+ service: sc_bl_auth
+  client: 127.0.0.1:3074
+   seq: 3
+    session: 121
+     pid: 105
+      protocol_id: 10
+       method_id: 3
+        call: 41
+         Jun 06 19:45:53.634 INFO Calling TicketGrantingProtocol.RequestTicket
+module: dedicated_server::ticket:30
+ service: sc_bl_auth
+  client: 127.0.0.1:3074
+   seq: 3
+    session: 121
+     pid: 105
+      protocol_id: 10
+       method_id: 3
+        call: 41
+         Jun 06 19:45:53.636 ERRO Error saving user session: error returned from database: (code: 1555) UNIQUE constraint failed: user_sessions.id
+PACKET SEND: [31, 3e, 72, 6, 1, 0, b2, 7f, 2, 0, 0, 8e, 0, e, ff, d8, da, 91, ff, 51, af, 7b, a2, 61, fd, 20, 17, db, b1, ff, 56, e5, 75, 97, 56, a3, 1c, 5b, ef, d9, 7, 8a, da, c7, 7e, e9, 2c, 8b, cb, 40, 1c, c6, d1, 51, 9, 80, 6b, e5, 9, 20, f0, d2, a1, 56, b5, 10, ca, cc, 36, 3d, 0, bc, a3, 7d, 6f, 2b, dc, e7, 76, f8, ca, 7d, 9b, e5, 26, 69, 36, 88, f3, c6, 31, 8b, e1, a0, b, d5, 4c, 3b, 4a, 17, 2d, 51, ee, 75, a8, 5, 25, b0, d, 83, b8, ce, 3d, f2, 18, 35, 9d, d2, bf, df, dd, ee, 38, b5, 26, 7f, 86, 45, bf, 9f, a8, 60, 40, 1, e4, 1b, 4a, f4, ea, 4b, 93, 3a, 6d, 63, 8e, 53, 7a, 32, f9, 35, d1, eb, 56, 92, 90, c9]
+PACKET: [3e, 31, a, 79, fd, 48, ae, 7b, 2, 0, 0, 13]
+PACKET: [3e, 31, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3f]
+server signature>: 541381294
+PACKET SEND: [31, 3e, 48, 0, 0, 0, 0, 0, 0, 0, ae, d2, 44, 20, 0, 0, 4b]
+PACKET: [3e, 31, 31, 7b, ae, d2, 44, 20, 1, 0, 1, 0, b3, 7f, f, c3, 44, db, 13, f7, a1, fe, 7d, af, be, 53, 7d, b6, bc, bc, 21, c0, fb, 17, 69, 6b, 8e, 1d, cf, 24, 42, ed, c1, 21, d6, d3, 2b, a8, a1, f9, 3f, a8, 5d, 63, f1, 73, 18, e3, d7, 69, 5, 73, bf, c, 84, 94, 42, 0, 6b, 7d, 49, 32, e5, 26, 37, 41, e5, 14, d6, 45, 51, ae, 9e, 2f, 96, f0, ad, eb, fd, 29, 4a, 92, 4, 33, c0, 1b, 6d, 4, ff, e7, 8e, 2, 4b, d1, 52, f7, c3, cb, 9c, a2, b6, fe, ab, 83, fc, 5d, ab, 41, 27, 5c]
+PACKET SEND: [31, 3e, 49, 6, 1, 0, b3, 7f, 1, 0, 0, 0, 0, 0, 9, 0, f, 83, 44, db, 13, 4, 7a, 1c, fc, 6]
+module: quazal::prudp:420
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 1
+    session: 123
+     Jun 06 19:45:53.743 INFO New client connected, session: 123, signature: 541381294
+PACKET: [3e, 31, 32, 7b, ae, d2, 44, 20, 2, 0, 0, d, ff, d8, 30, 74, 9f, 4c, b8, d3, a3, 73, 71, 6a, da, f6, 75, 49, 5a, e3, b0, 32, 7f, a7, 4a, a0, 66, 9c, 2e, cf, 73, 85, cb, c0, fa, 53, 42, a9, 1d, 7d, b3, ee, 69, d1, 83, 3a, 83, 9e, 5e, 47, 91, 27, d2, bd, 2f, ba, 17, 53, d6, 2c, 5, b0, cf, 7a, 2b, 6d, fe, b9, 9d, 68, 9b, b2, 1c, a0, 6e, d4, 9f, cc, 22, 4e, 47, fb, 68, 43, 6a, 13, d6, 28, 76, aa, 44, cf, 67, c5, 9f, 62, 73, 4d, 3b, 75, 1a, ca, df, b4, 5f, 58]
+PACKET SEND: [31, 3e, 4a, 6, 1, 0, b3, 7f, 2, 0, 0, 0, 0, a4]
+module: quazal::rmc:350
+ servicePACKET SEND: [31, 3e, 72, 6, 1, 0, b3, 7f, 1, 0, 0, 55, 0, e, ff, d8, da, 5a, ff, 9a, af, 40, a2, 61, fd, 21, 17, de, b1, ff, 56, e7, 75, 97, 56, a3, 1c, 5b, ef, 1e, ad, 20, e0, 71, e, 6, e, b0, 60, a3, a1, 34, c4, f0, 8b, d9, 80, 4f, 26, a6, 96, 30, 83, bf, 24, 95, f9, b2, f0, 29, c7, 8d, e9, ea, 44, df, d, 7c, 8c, e4, 2f, d7, 2d, c1, f7, 57, cc, 8e, 40, 2e, 39, 73, fd, e3, e3, a5, b4, 8d, f]
+: PACKET: [3e, 31, a, 7b, ae, d2, 44, 20, 1, 0, 0, 8a]
+sc_bl_securePACKET: [3e, 31, 33, 79, fd, 48, ae, 7b, 4, 0, 3e]
+
+PACKET SEND: [31, 3e, 4b, 6, 1, 0, b2, 7f, 4, 0, 0, 0, a6]
+  client: 127.0.0.1:3074
+   seq: 2
+    session: 123
+     pid: 105
+      Jun 06 19:45:53.814 INFO Looking for protocol 11, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 2
+    session: 123
+     pid: 105
+      protocol_id: 11
+       method_id: 1
+        call: 44
+         Jun 06 19:45:53.817 INFO Calling SecureConnectionProtocol.Register
+module: dedicated_server::secure:26
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 2
+    session: 123
+     pid: 105
+      protocol_id: 11
+       method_id: 1
+        call: 44
+         Jun 06 19:45:53.820 INFO Client registers with RegisterRequest { vec_my_urls: [StationURL { scheme: "prudp", address: "192.168.1.60", port: 3074, params: {"sid": "14", "RVCID": "984263338"} }, StationURL { scheme: "prudp", address: "127.0.0.1", port: 3074, params: {"sid": "14", "RVCID": "984263338", "type": "3"} }] }
+module: quazal::prudp:185
+ service: sc_bl_auth
+  client: 127.0.0.1:3074
+   seq: 4
+    session: 121
+     Jun 06 19:45:53.821 INFO Client disconnected, session: 121, signature: 2075019517
+module: dedicated_server:121
+ service: sc_bl_auth
+  Jun 06 19:45:53.823 INFO Cleaning closed session of user 105
+PACKET: [3e, 31, 32, 7b, ae, d2, 44, 20, 3, 0, 0, f, 8e, 44, db, 13, 5b, 2, 50, 5, a2, 65, fd, 2a, 16, 7d]
+PACKET SEND: [31, 3e, 4a, 6, 1, 0, b3, 7f, 3, 0, 0, 0, 0, a5]
+modulePACKET SEND: [31, 3e, 72, 6, 1, 0, b3, 7f, 2, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 0, 64, 76, 62, 6f, 6, 1b, fe, d1, ff, 56, ee, 2e, 97, b0, b3]
+:PACKET: [3e, 31, a, 7b, ae, d2, 44, 20, 2, 0, 0, 8b]
+ quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 3
+    session: 123
+     pid: 105
+      Jun 06 19:45:54.488 INFO Looking for protocol 36, method 4
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 3
+    session: 123
+     pid: 105
+      protocol_id: 36
+       method_id: 4
+        call: 46
+         Jun 06 19:45:54.491 INFO Calling TrackingProtocol3.GetConfiguration
+PACKET: [3e, 31, 33, 7b, ae, d2, 44, 20, 4, 0, b6]
+PACKET SEND: [31, 3e, 4b, 6, 1, 0, b3, 7f, 4, 0, 0, 0, a7]
+module: quazal::prudp:185
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 4
+    session: 123
+     Jun 06 19:45:54.988 INFO Client disconnected, session: 123, signature: 541381294
+module: dedicated_server:121
+ service: sc_bl_secure
+  Jun 06 19:45:54.989 INFO Cleaning closed session of user 105
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, e, 0, 0, f, 96, 44, db, 13, 62, 1d, 50, 5, a2, 6d, fd, 2a, 16, f3, b1, ff, 56, c, f6, 97, 56, 65]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, e, 0, 0, 0, 0, b1]
+module: quazal::rmc:350
+ service: PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, e, 0, 0, 22, 0, e, ff, d8, 48, 73, 9f, 4c, c0, 60, 96, 65, 6f, 16, 1b, fe, bd, 73, 16, 1c, e0, a4, 55, a1, 17, 19, 5f, 16, 28, 89, da, 5f, 29, 74, bb, c]
+sc_bl_secure
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, e, 0, 0, 56]
+  client: 127.0.0.1:3074
+   seq: 14
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.498 INFO Looking for protocol 29, method 12
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 14
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 49
+         Jun 06 19:45:55.501 INFO Calling UbiAccountManagementProtocol.LookupUbiAccountIDsByPids
+module: dedicated_server::ubi_acc_mgmt:91
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 14
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 49
+         Jun 06 19:45:55.504 INFO Lookup requested for 1 pids. Found 1
+module: dedicated_server::ubi_acc_mgmt:97
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 14
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 49
+         Jun 06 19:45:55.508 INFO Lookup requested for 1 ([1002]) pids. Found 1 ({1002: "SAM"})
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, f, 0, 1, 9, ff, d8, 6, dc, c6, 26, 92, 45, ba, e7, 1c, 15, a7, e2, c, 75, 20, b8, bc, 52, 5b, 66, d2, e2, cd, d, 85, 32, 4, 85, 76, 75, 8b, f, 59, f8, ae, 92, 47, bd, 93, 6a, cc, ee, f, 1, 45, 63, 12, 69, 12, 5d, fc, 5e, e3, 74, f3, a6, ef, f6, 1, 17, 79, 7d, 52, f1, b1, a2, fd, 2a, cc, ff, 9f, 5c, a4, 44, 22, 72, f8, b6, c9, 13, 53, 28, 55, 86, dc, 52, 6e, 20, f, e6, c6, 63, 83, ac, a0, 59, 3b, 7a, 60, 73, b7, 43, df, 2d, d9, dc, 7b, b5, b5, 38, 8d, a4, 3, 9c, d4, 1a, 61, 50, 59, b, 33, fc, 75, 1d, cb, c4, 22, 7c, 16, 6a, 4d, 87, 51, a4, e5, 44, fa, 30, 5a, 88, df, bf, 9, a9, cb, 7d, b8, 5e, a2, d1, 38, 76, 3d, 39, c4, 14, 13, 33, aa, d, 29, 7c, bb, d7, f0, c, dc, 7, 4c, 72, 2f, 72, 52]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, f, 0, 1, 0, 0, b3]
+modulePACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 10, 0, 2, 8, ff, d8, 16, dc, c6, 22, d1, 54, b6, e7, 1c, 89, 47, 42, a5, 24, 14, aa, 7c, 7f, 9a, 50, 87, 9d, 9a, 2c, 2c, b9, 4f, 99, 3c, ca, 9e, d3, e, 56, 34, 68, 36, b3, c8, 12, 9c, b7, 26, 57, 95, 64, 22, d4, 1a, c2, dd, cc, 85, 1b, d2, b6, 7b, ff, f1, fd, fb, d3, d8, 55, 42, 48, 5, c4, 43, 70, 21, 25, 49, c1, 19, b4, f1, 3, 3a, dd, 68, 5e, 3a, 22, bd, 54, 75, 78, d5, a5, 3e, bb, a1, d3, c, 14, 2, e1, 3c, 80, bc, 7f, 5f, 1d, 9a, 56, 41, c1, dd, 89, 6d, 19, ad, 34, 18, f9, 7, 6d, 97, c3, 4c, 63, 38, 62, cd, 84, 79, 88, a6, a5, a0, 1a, 65, 62, e1, eb, f0, 5a, 36, f8, 25, 2, a8, 17, a7, 83, c1, 6f, c4, 1c, fe, 8a, ff, 21, 57, 13, b6]
+:PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 10, 0, 2, 0, 0, b5]
+ quazal::prudp:243
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 11, 0, 3, 4, ff, d8, 4e, d9, 48, 21, d0, 5, a2, 62, bc, f9, c6, 42, 97, fa, 3f, f0, 87, 59, 3a, 28, 39, 2, f, 98, ba, 56, 46, e4, 4e, 24, d5, 2a, 47, c4, 20, df, 0, ba, 9c, 12, ce, c8, 78, 61, fa, 7, c9, 9c, 69, b8, b4, 97, bc, 15, ca, ed, 66, 9e, 84, e4, c0, 4f, 45, d3, a6, ac, a0, ae, 37, 63, a, f3, d4, 4b, f9, 4b, 34, e6, 4f, c3, 5b, e5, 26, a3, ec, c, 33, 2b, 2b]
+ PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 11, 0, 3, 0, 0, b8]
+service: sc_bl_securePACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 12, 0, 4, b, ff, d8, 76, c1, b4, 62, 52, 44, b2, a7, c, c4, f7, 5b, 31, 75, d4, 9c, f2, 38, d3, ab, a2, d8, 5f, a7, 11, 90, 75, 82, 1f, 32, cb, cf, 2f, 50, 91, 33, 7b, d7, 96, 3, ed, de, b6, a4, 6, 4a, b2, 93, bd, d3, 55, 78, 56, 4c, cb, b7, 4e, 43, 4a, 8f, b0, 7a, fd, 87, 5f, 3f, 1f, be, f1, bd, 32, e3, df, 87, ec, cb, 83, be, e7, 98, e1, c, d5, e, 54, a1, 28, 1f, 7b, 52, e5, ed, 71, 55, 6c, b, d3, eb, 32, ef, 50, 87, 59, 73, d5, 40, a9, f9, 90, b3, f1, a2, 74, 56, 33, 9d, ae, c0, e, 25, e2, b8, 43, 9d, d7, d4, 33, 6d, e, 41, 6a, 7c, ba, 53, dd, 91, ca, 12, 4e, e9, 4f, 8b, ca, a4, 43, 58, 2b, 40, fe, f1, 41, aa, b0, 18, 2b, 2d, 1, 47, d7, 60, e8, ed, 9, 3a, 5, fc, 9d, 88, 16, 48, 72, 6e, 3f, 95, 7f, 18, 28, a4, c2, 6e, d, 25, a2, f5, 36, 29, ea, 28, d1, ba, ac, 32, 28, 88, c2, a1, 31, dc, c5, c2, f6, 38, 4, b, 68, f1, e8, b6, 4d, ef, 5a, 6, ff, 1a, f1, 57, d1, 2b, ab, d8, ea, 15, 59, f7, c1, 55, e2, 81, 64, af, 4a, 96, 68, 31, c4, 49, 63, 83, 2c, 91, b0, 2b, 2a, e7, 9c, b2, 90, b1]
+
+  clientPACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 12, 0, 4, 0, 0, ba]
+: 127.0.0.1:3074
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 13, 0, 5, 6, ff, d8, 76, df, c4, 22, d2, 65, b2, 24, 1c, 8b, a7, 51, 25, ea, 5c, 64, 3f, 34, 82, e4, fe, 68, a7, a5, 5f, 89, ba, cb, be, 45, b2, 4a, 10, fd, 7b, 55, 57, f1, 75, 30, 86, 9d, cc, e2, 57, 73, 73, 92, 5b, 2f, b1, 3d, 6, 92, a6, fd, d7, 66, 1b, 2a, 5f, f4, 83, 31, d6, e6, 85, 9e, c1, 3e, 46, 4d, bc, 42, 5f, 55, a8, 8, 98, a2, 7b, 62, 77, fc, 7e, 70, 89, d, 72, 78, f4, cc, 73, 1c, ea, f8, 69, b0, fd, 8b, 90, 57, 3e, e8, f6, 79, 86, d0, 1d, 37, a8, b2, c5, e0, 54, fe]
+   PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 13, 0, 5, 0, 0, bc]
+seq: PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 14, 0, 6, 5, ff, d8, 4e, c1, 36, 21, d0, 35, ae, 64, ac, 59, b7, f6, d9, ef, e4, 56, 42, d4, e, e9, d9, d2, cf, c4, 45, 93, 91, e3, 71, f, 3b, 4e, e0, f1, a9, 70, e, 22, 86, 10, 93, 54, f2, a7, f0, 6a, 2d, c7, d3, f6, 3c, 9a, bb, 19, a, 61, 45, dd, a6, ac, e2, 9, 67, 9e, 84, ed, 62, e4, f5, 27, c8, d8, d3, 78, ea, 29, 4a, 55, 4e, 16, 7d, b3, a, 7f, 76, a1, e5, 8d, da, ae, a4, c7, 23, 8b, 22, 95, 1f, 7f, 65, c5, 84, da]
+15PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 14, 0, 6, 0, 0, be]
+
+    sessionPACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 15, 0, 7, 8, ff, d8, 76, c3, c4, 22, d2, 55, b2, 27, 1c, 8b, a7, c3, 65, b9, 81, 41, fc, bd, 7c, 80, a2, 40, 62, 6e, c7, a, 74, 1, ba, 83, cd, f6, b, b2, 91, 21, 38, f0, a7, 15, 39, da, ea, bc, 43, 88, 7c, c8, 50, b1, 5d, 24, 21, 38, 7a, 35, d8, 1e, d0, 72, 20, af, 4a, a4, 44, b5, aa, 97, 29, 1b, 99, 21, 6, c6, ff, a6, 6, 9e, ed, 1, dc, 3d, 1f, b8, 85, fe, 15, c3, 8c, cf, c9, 23, e1, a8, c8, 73, 48, 4d, 4f, f9, 22, 6c, e7, fa, 15, 13, 47, 4f, 6b, c7, a8, 1a, 3b, 6d, 78, 99, ee, e9, f8, 4, 7e, 7a, f, 45, 29, b, f9, f, a1, 7f, 47, e7, d6, 12, f3, 93, 6c, 19, 1e, ff, 74, 8c, 47, 3c, c1, 3c]
+: PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 15, 0, 7, 0, 0, c0]
+146
+  PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 16, 0, 8, 7, ff, d8, 76, df, ce, 26, d3, 45, b2, 27, 1c, 63, 85, 3c, ba, 67, 5, a0, d6, ff, 82, f7, 93, 7b, f7, 26, 34, ce, b7, 77, 74, 45, e3, 7d, 81, ba, 1f, 9e, fc, 6c, 77, 86, 9b, a2, 40, a, b8, 64, 98, 23, ab, ab, de, 38, 2f, 14, 59, 7d, 5a, 3e, 3b, 6f, 12, 4d, 34, 47, 3b, e1, 7, 3d, a8, 8e, 5e, 25, e3, 5f, 5f, c7, ab, 48, e6, a2, bf, 23, 8c, d, 7e, 10, 18, fa, 19, d7, 69, 6, cb, 51, 2f, ea, ca, 13, f5, 5e, 9e, d8, bb, d7, 95, ef, 93, 4d, b6, b1, 53, eb, dd, 76, 15, f1, 8f, 13, 62, 23, 97, 3f, 3b]
+   PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 16, 0, 8, 0, 0, c2]
+pid: 1002PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 17, 0, 9, 5, ff, d8, 4e, d9, b6, 22, 10, 45, b6, 24, 2c, 45, 74, e1, dd, ad, 1, 43, 92, 8c, 2c, e9, e9, 1f, 76, bc, e9, c1, b4, 9e, ea, be, 50, e7, 8f, 65, f1, 80, 13, 5f, 5a, eb, 16, 8, b6, 45, 70, 4, 59, 5a, 4f, 53, ba, 74, ca, fa, fc, a, b0, 76, 12, 4, 26, a3, e3, 37, 60, 46, a6, 3b, f4, 11, 88, 26, 78, d1, 5a, ae, 20, c1, 5a, ad, 4e, f5, 32, fb, 4e, 89, e5, ad, da, b6, 24, 34, f, 63, 32, e5, 4c, 67, 20]
+
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 17, 0, 9, 0, 0, c4]
+      PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 18, 0, a, 6, ff, d8, 4e, d9, 38, 25, d0, 55, b6, 25, 2c, cd, d0, d8, 75, 15, a, 7e, ef, a7, d, 25, 7e, 5a, 9c, 19, d6, 8b, 25, 2, a, b7, 65, 7d, c8, 35, 13, cf, 87, 46, 4f, fd, b, 25, 1d, d8, 26, 78, a9, 84, bc, ff, dc, 66, 33, 33, 5e, c1, 49, 59, dd, a3, 75, d4, 2a, e1, 78, d3, a3, 77, 51, af, 82, f2, 46, 6b, 1f, 7b, 1, a6, ac, 3c, f9, 58, fd, 55, e6, 40, 9c, 54, 3d, 49, b9, 1a, f1, d8, 4a, 1f, a5, 61, 6, b6, 2, 22, ac, ca, c0, 4b, ef, 88, e3, 73, 5b]
+Jun 06 19:45:55.533 PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 18, 0, a, 0, 0, c6]
+INFO Caching fragment 1
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 19, 0, b, 4, ff, d8, 4e, d9, 48, 21, d0, 45, b6, 65, 2c, 97, 92, c0, 19, 71, 56, 31, ee, 49, 49, 14, 2e, e4, eb, 94, 45, 10, 4f, 6, 95, 4a, 35, 5c, a0, 8f, 54, 59, 6e, cd, 2a, 50, 64, 29, c, 2a, 32, 5a, 1d, 2f, 69, b2, b4, 99, bc, 1f, ca, e1, e6, 95, 4, eb, 40, 44, 45, df, a6, a6, a0, a0, 37, 69, a, ff, 94, cd, 7a, c7, b7, 60, cc, 49, 58, 66, 24, 2c, 58, 40, fc, 97, 42, bf, 9c, 53, c]
+   PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 19, 0, b, 0, 0, c8]
+seq: PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 1a, 0, 0, 8, ff, d8, 4e, d9, 34, 21, d2, 55, b6, e5, 1c, 21, 1d, 1b, b3, d7, d8, e3, ff, 23, 93, 71, 32, 5e, 5e, b5, 7e, 83, 72, 34, cc, 6e, b3, f, 4c, 55, e0, 89, 9a, f3, 1e, e6, 45, a8, 5f, 4e, 50, 6e, d0, 31, 9f, 47, ca, 6e, 51, 9d, 39, a, 1f, 1c, 46, 17, 6f, 38, e7, b6, b5, 1, c7, 5f, 90, 16, 88, 26, 90, 3d, 60, 35, 5e, 8c, 78, f0, 5c, 17, 5c, d0, ed, 6, 2e, 7e, 3d, bf, 56, f7, 56, f3, d1, 71, f8, c3, 89, b6, e, 74, a7, e, fa, 71, 98, 63, 50, d5, e, a4, cf, 9f, 65, 2c, 3c, f4, e4, 7e, 98, 15, 1f, ab, a0, 5b, a1, 24]
+16
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 1a, 0, 0, 0, 0, bd]
+    session: 146
+     pid: 1002
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, f, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 60, 62, 96, 67, 6f, 66, 1b, fe, d1, ff, 56, ec, e4, 97, aa, 53]
+ PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 1b, 0, 0, f, 92, 44, db, 13, 4a, 18, 50, 5, a2, 68, fd, 2a, 16, f0, b1, ff, d6, e7, f5, 97, 56, a2, 1c, 5a, ef, ac]
+  PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 1b, 0, 0, 0, 0, be]
+   Jun 06 19:45:55.534 INFO Caching fragment 2PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 10, 0, 0, 49, 0, e, ff, d8, da, 2e, ff, ee, af, 3c, a2, 61, fd, 1f, 17, c6, b1, ff, 56, ef, 75, 97, 56, aa, 1c, 32, 9b, c1, 77, b0, f5, 6f, e, 79, 7c, f4, 36, e4, b5, 2b, 8b, a4, c1, 9a, df, 4, 65, ab, 97, 2, a6, 91, 3b, d6, b9, c3, a3, 73, db, 83, f5, fd, 10, 82, 5a, 65, d1, b1, 32, ae, 68, 7d, c6, b8, 7e]
+
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, f, 0, 0, 57]
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 10, 0, 0, 58]
+   seq: 17
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.535 INFO Caching fragment 3
+   seq: 18
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.537 INFO Caching fragment 4
+   seq: 19
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.538 INFO Caching fragment 5
+   seq: 20
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.539 INFO Caching fragment 6
+   seq: 21
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.541 INFO Caching fragment 7
+   seq: 22
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.542 INFO Caching fragment 8
+   seq: 23
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.543 INFO Caching fragment 9
+   seq: 24
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.545 INFO Caching fragment 10
+   seq: 25
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.546 INFO Caching fragment 11
+module: quazal::prudp:261
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 26
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.548 INFO Reassembled 12 fragments
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 26
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.550 INFO Looking for protocol 55, method 2
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 26
+    session: 146
+     pid: 1002
+      protocol_id: 55
+       method_id: 2
+        call: 51
+         Jun 06 19:45:55.553 INFO Calling PlayerStatsProtocol.ReadStatsByPlayers
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 27
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.555 INFO Looking for protocol 53, method 9
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 27
+    session: 146
+     pid: 1002
+      protocol_id: 53
+       method_id: 9
+        call: 52
+         Jun 06 19:45:55.558 INFO Calling UserStorageProtocol.GetContentUrl
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 1c, 0, 0, f, 94, 44, db, 13, 62, 19, 50, 5, a2, 6f, fd, 2a, 16, f3, b1, ff, 56, e2, f5, c4, 17, ef, 1c, 3e]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 1c, 0, 0, 0, 0, bf]
+module: PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 11, 0, 0, 15, 0, e, ff, d8, 38, 71, 9f, 4c, c0, 60, c2, 3, 9d, 46, 26, f7, 3, ff, 53, c0, f5, 77, d7]
+quazal::rmc:350
+ PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 11, 0, 0, 59]
+service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 28
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.599 INFO Looking for protocol 29, method 14
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 28
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 14
+        call: 53
+         Jun 06 19:45:55.603 INFO Calling UbiAccountManagementProtocol.LookupUsernamesByUbiAccountIDs
+module: sc_bl_protocols::protocols::ubi_account_management_service::ubi_account_management_protocol:751
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 28
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 14
+        call: 53
+         Jun 06 19:45:55.606 WARN Method UbiAccountManagementProtocol.lookup_usernames_by_ubi_account_ids not implemented
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 1d, 0, 0, f, 8a, 44, db, 13, 15, 1b, 50, 5, a2, 64, fd, 2a, 16, 18, b2, ff, 56, 45]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 1d, 0, 0, 0, 0, c0]
+modulePACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 12, 0, 0, 2a, 0, e, ff, d8, 88, 77, 9f, 4c, 98, 67, 96, 66, 6f, 86, 1b, fe, bd, 0, d7, 66, 60, b6, 92, 97, 24, de, 6e, 30, c6, 47, 5, 5f, 46, 4c, 45, c3, 35, d3, 9b, 81, 5d, 9c, a4, 92]
+: PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 1e, 0, 0, c, ff, d8, e0, dc, 3f, ec, e0, d8, a0, 29, cd, 28, 27, f9, 25, f9, 37, e0, dd, 4a, 57, 0, 7d, 58, 4d, fd, 95, aa, 1f, 55, c6, e4, e9, d, 98, e9, 8b, 9c, ae, 5e, 36, 2f, c9, 1f, db, ff, a1, 11, a4, 5e, 56, ed, f0, 8b, 98, b7, b5, 70, d1, f8, 59, b2, 3b, a9, 1f, 9f, 5e, f8, 7d, cf, 91, ec, 5b, f0, 29, e1, 46, 4a, 41, af]
+quazal::rmc:350PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 1e, 0, 0, 0, 0, c1]
+
+ service: sc_bl_secure
+  PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 13, 0, 0, 15, 0, e, ff, d8, 38, 71, 9f, 4c, 60, 62, 16, 61, 6f, a6, 1b, fe, bd, ff, 50, eb, f5, 6b, 31]
+clientPACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 12, 0, 0, 5a]
+:PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 13, 0, 0, 5b]
+ 127.0.0.1:3074
+   seq: 29
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.735 INFO Looking for protocol 106, method 5
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 29
+    session: 146
+     pid: 1002
+      protocol_id: 106
+       method_id: 5
+        call: 55
+         Jun 06 19:45:55.738 INFO Calling ClanHelperProtocol.GetClanInfoByPid
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 30
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.740 INFO Looking for protocol 55, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 30
+    session: 146
+     pid: 1002
+      protocol_id: 55
+       method_id: 1
+        call: 56
+         Jun 06 19:45:55.743 INFO Calling PlayerStatsProtocol.WriteStats
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 1f, 0, 0, c, ff, d8, 70, 75, 9f, 4c, 88, 6b, ab, 45, e5, ab, 8e, fb, 39, ba, f7, a, e1, b7, 30, a3, fe, 50, ff, aa, 23, 8a, d8, d5, c6, ea, 46, d5, 83, d8, 51, c2, 21, b8, cc, 25, 81, 3a, 9d, 57, fe, ca, 9e, 76, 36, 10, cd, 9c, 6c, 42, b2, 3, a7]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 1f, 0, 0, 0, 0, c2]
+modulePACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 14, 0, 0, 15, 0, e, ff, d8, 38, 71, 9f, 4c, 60, 62, 16, 65, 6f, a6, 1b, fe, bd, ff, 50, f3, f5, 6a, 3d]
+:PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 14, 0, 0, 5c]
+ quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 31
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.768 INFO Looking for protocol 55, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 31
+    session: 146
+     pid: 1002
+      protocol_id: 55
+       method_id: 1
+        call: 57
+         Jun 06 19:45:55.771 INFO Calling PlayerStatsProtocol.WriteStats
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 20, 0, 0, f, 8a, 44, db, 13, 15, 16, 50, 5, a2, 69, fd, 2a, 16, d, 4e, 0, a9, 2c]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 20, 0, 0, 0, 0, c3]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 15, 0, 0, 1c, 0, e, ff, d8, c8, 71, 9f, 4c, 98, 67, 16, 63, 6f, 36, 1b, fe, bd, 73, 16, 1c, e0, a4, 55, a1, 1c, 4c, 8f, b7, 29, f6]
+module:PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 15, 0, 0, 5d]
+ quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 32
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.835 INFO Looking for protocol 106, method 8
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 32
+    session: 146
+     pid: 1002
+      protocol_id: 106
+       method_id: 8
+        call: 58
+         Jun 06 19:45:55.838 INFO Calling ClanHelperProtocol.GetMemberListByClid
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 21, 0, 0, f, 96, 44, db, 13, 62, 17, 50, 5, a2, 6d, fd, 2a, 16, f3, b1, ff, 56, c, f6, 97, 56, 72]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 21, 0, 0, 0, 0, c4]
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 16, 0, 0, 22, 0, e, ff, d8, 48, 73, 9f, 4c, c0, 60, 16, 67, 6f, 16, 1b, fe, bd, 73, 16, 1c, e0, a4, 55, a1, 17, 19, 5f, 16, 28, 89, da, 60, d, 74, ad, 6c]
+seq: PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 16, 0, 0, 5e]
+33
+    session: 146
+     pid: 1002
+      Jun 06 19:45:55.935 INFO Looking for protocol 29, method 12
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 33
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 59
+         Jun 06 19:45:55.939 INFO Calling UbiAccountManagementProtocol.LookupUbiAccountIDsByPids
+module: dedicated_server::ubi_acc_mgmt:91
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 33
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 59
+         Jun 06 19:45:55.942 INFO Lookup requested for 1 pids. Found 1
+module: dedicated_server::ubi_acc_mgmt:97
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 33
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 59
+         Jun 06 19:45:55.946 INFO Lookup requested for 1 ([1002]) pids. Found 1 ({1002: "SAM"})
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 22, 0, 0, f, 94, 44, db, 13, 62, 10, 50, 5, a2, 6f, fd, 2a, 16, f3, b1, ff, 56, e2, f5, c4, 17, ef, 1c, 3b]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 22, 0, 0, 0, 0, c5]
+module: PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 17, 0, 0, 15, 0, e, ff, d8, 38, 71, 9f, 4c, c0, 60, c2, 3, 9d, 46, a6, f3, 3, ff, 53, a4, f5, 70, 36]
+quazal::rmc:350PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 17, 0, 0, 5f]
+
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 34
+    session: 146
+     pid: 1002
+      Jun 06 19:45:56.035 INFO Looking for protocol 29, method 14
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 34
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 14
+        call: 60
+         Jun 06 19:45:56.038 INFO Calling UbiAccountManagementProtocol.LookupUsernamesByUbiAccountIDs
+module: sc_bl_protocols::protocols::ubi_account_management_service::ubi_account_management_protocol:751
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 34
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 14
+        call: 60
+         Jun 06 19:45:56.041 WARN Method UbiAccountManagementProtocol.lookup_usernames_by_ubi_account_ids not implemented
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 23, 0, 0, f, 96, 44, db, 13, 16, 11, 50, 5, a2, 63, fd, 2a, 16, 18, b2, ff, 56, e6, f5, 97, 56, 17]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 23, 0, 0, 0, 0, c6]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 18, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 98, 61, 16, 64, 6f, 66, 1b, fe, d1, ff, 56, eb, b0, 96, 6e, 9e]
+modulePACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 18, 0, 0, 60]
+: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 35
+    session: 146
+     pid: 1002
+      Jun 06 19:45:56.707 INFO Looking for protocol 105, method 2
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 35
+    session: 146
+     pid: 1002
+      protocol_id: 105
+       method_id: 2
+        call: 61
+         Jun 06 19:45:56.710 INFO Calling ChallengeHelperProtocol.GenerateFriendChallenges
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 24, 0, 0, f, 8a, 44, db, 13, 15, 12, 50, 5, a2, 68, fd, 2a, 16, 18, b2, ff, 56, 47]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 24, 0, 0, 0, 0, c7]
+modulePACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 19, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 98, 67, 16, 62, 6f, b6, 1b, fe, d1, ff, 56, eb, 62, 96, 17, 4e]
+:PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 19, 0, 0, 61]
+ quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 36
+    session: 146
+     pid: 1002
+      Jun 06 19:45:56.808 INFO Looking for protocol 106, method 9
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 36
+    session: 146
+     pid: 1002
+      protocol_id: 106
+       method_id: 9
+        call: 62
+         Jun 06 19:45:56.811 INFO Calling ClanHelperProtocol.GenerateClanChallenges
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 25, 0, 0, d, ff, d8, 68, 70, 9f, 4c, a8, da, 8d, 8d, fd, 8e, e, 73, e9, 6b, 77, 46, dd, 28, 72, 7d, 25, 79, de, 92, 20, bf, f5, 7d, db, 5b, 4f, 62, 20, 66, 13, 9a, a2, bc, 2a, aa, 21, 70, 59, 93, 87, 0, 11, 90, d1, dc, c3, c1, 7e]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 25, 0, 0, 0, 0, c8]
+module: PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 1a, 0, 0, 6b, 1, d, ff, d8, b6, 41, 80, 66, 93, 35, b6, 2f, 16, 3b, aa, b2, 79, fa, c, dd, 6c, 9f, 3b, b3, c6, b, e4, 67, ce, 30, 53, be, 1b, 34, 67, 72, b6, fd, 42, c1, d1, b6, ac, 5f, e3, 62, 93, d8, df, 29, f9, fa, 6b, ff, 7f, 9b, 38, e3, 45, 3c, 60, 40, 8e, d1, cf, ee, bb, 2f, a5, d7, f3, 79, ca, 65, 43, f2, 90, ae, fd, ff, 1a, 22, ab, f6, 1a, 67, 4b, c6, dd, 91, 9f, 47, ba, 8d, f7, 44, 16, fa, 2f, be, 94, d7, d9, 1e, 1c, 4b, 94, a, b1, dd, 3, 74, 22, 4a, 8e, 1e, d0, ef, 7c, a3, 23, 50, d3, a8, 36, 5c, 56, 50, 62, bb, fb, ab, ec, 10, 55, 6, a5, 4e, b3, 7c, 60, d4, ee, 42, 3b, 37, e7, ae, 4, 6f, d9, 14, ec, 8c, ae, d6, 8f, a4, 6c, d2, e2, 3, fb, ca, 52, fb, ce, 73, da, f8, fb, e8, 5, 84, 72, 56, 18, e1, 82, e0, 2b, f2, 48, 32, f3, 7b, 78, 25, a, 2a, 85, fc, 98, 4c, a, 91, 64, a, d, 38, 83, 8a, 84, 1, 53, ed, 78, 2c, a, 66, e4, 94, 4f, 2b, 55, 23, af, bf, 2b, 5f, 14, de, a8, d5, ba, e4, 44, 1b, bd, 4c, 8a, 90, a3, bc, 76, 81, 80, e1, 95, 64, 8, f, ae, 60, 25, f7, quazal::rmc:35019, b8, 55, b0, ee, 96, 15, 1a, 96, 59, 2b, cf, 4a, 33, e3, d3, 91, d2, 25, 8d, b3, 2a, 76, 82, 69, c8, e2, ca, 47, 80, 3d, ba, 9f, 53, 6a, c0, 14, b4, 83, 84, 6, 33, 73, 31, ab, 8e, f9, 6c, 1d, 5f, 29, bf, 61, b1, 4e, b1, e8, 29, 26, 65, 47, a4, 1d, 81, aa, d6, 7d, 5, 68, 3f, f3, ce, ba, e3, 4d, 61, 25, 9a, f6, 92, 8d, 8e, f0, 55, 8e, 4a, 4c, 56, e6, 9c, 40, 68, 49, 58, a3, 1d, 23, 2d, 46, fd, fb, 9a, 66, 1f, 3e, 7, 2, c7, 72, de, 38, 6e, f9, 8c, 5e, a8, 2f, 97, 92]
+
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 37
+    session: 146
+     pid: 1002
+      Jun 06 19:45:56.946 INFO Looking for protocol 5007, method 1
+module: quazal::rmc:361
+ service:PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 1a, 0, 0, 62]
+ sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 37
+    session: 146
+     pid: 1002
+      protocol_id: 5007
+       method_id: 1
+        call: 64
+         Jun 06 19:45:56.950 INFO Calling OverlordChallengeProtocol.get_challenges
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 26, 0, 0, d, ff, d8, 68, 70, 9f, 4c, a8, da, 8d, 8d, f9, 8e, e, 73, e9, 6b, 77, 46, dd, 28, 72, 7d, 25, 79, de, 92, 20, bf, f5, 7d, db, 5b, 4f, 62, 20, 66, 13, 9a, a2, bc, 2a, aa, 21, 90, 59, 93, 87, 0, 11, 90, d2, a2, c3, fe, 9f]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 26, 0, 0, 0, 0, c9]
+module: quazal::rmc:350
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 1b, 0, 0, 6b, 1, d, ff, d8, b6, 41, 92, 62, d3, 45, b2, 3c, d, 22, 48, 92, 2, e8, 56, 4f, 5c, a6, 57, dc, 14, 57, 7d, ad, 6d, c0, b1, b4, d9, 10, 7f, ae, 4f, 99, ec, 40, fd, fe, a3, c8, 11, 3a, b, 5d, e4, 7a, 9f, cc, 84, 34, fc, 71, e5, e9, 86, d9, a8, f1, a7, 77, d1, dc, b6, 1f, a0, 49, e4, d2, c9, 65, 27, c3, cd, d8, e3, b5, 87, e4, d5, 2e, 56, e0, 9c, 12, 4b, 17, 45, 3e, 7d, 16, 7a, f8, fc, 67, ff, f6, 21, 6e, fc, af, 71, c0, 5e, f6, e3, 32, 38, 17, 84, c8, 73, 5c, c, 7, c4, 38, 7c, 15, 31, 64, d9, 8f, 20, 20, 9, 27, 35, ef, 2c, 23, 61, 54, df, b9, 7f, f3, 29, 4e, 3e, 66, e, 77, 1f, 80, 74, 25, 4b, 41, 7d, 3e, 3d, f0, e7, 40, 9d, 4e, 3d, c8, 89, d8, b7, aa, fd, 25, 55, 5b, 70, bd, 60, a4, c2, 18, fd, 28, 33, d4, 51, 2e, 45, 8c, 7b, c0, e9, 6e, 1b, b, 40, 82, 1, d1, a, 24, 7e, 22, 6c, 54, a0, 60, 69, b9, b4, 7e, 2d, 68, f7, 8c, 70, 44, 2a, 1d, 7a, 7c, 99, 3d, 52, 7d, 90, 54, 77, a6, d, ac, df, c9, c4, 23, 89, 1a, ee, 50, 16, 4f, c, 65, b7, 3, b9, ca, 27, 97, 1e, 48 , e3, 4e, e2, d7, 32, 12, fb, ff, 6e, 3c, 9a, 95, dc, 5, c6, 46, 85, b9, 37, 3e, e0, 89, e7, 75, 63, 1c, 8c, f, 5f, 5a, 34, 1f, e, fa, bf, fe, f5, 9, 48, 80, 3a, 22, ec, 22, 3d, 5e, 70, b8, e7, 7a, bb, f9, ec, 95, d5, 61, 7f, bf, 5e, 39, fc, bf, 3b, 3f, 7b, c9, 68, 6b, 87, e6, d9, 79, 69, 35, 44, d7, ca, 2c, 2e, 2c, 8a, f8, 23, 1a, 8f, 42, 70, 59, 12, ec, 86, 90, c1, 29, cd, ad, 4, d0, 86, bf, bd, bb, c2, 6e, 2d, b5, 44, 4b, fc, 9c, b8, de, f9, 9e, 5b, c8, 2f, 91, 9d]
+service:PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 1b, 0, 0, 63]
+ sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 38
+    session: 146
+     pid: 1002
+      Jun 06 19:45:57.075 INFO Looking for protocol 5007, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 38
+    session: 146
+     pid: 1002
+      protocol_id: 5007
+       method_id: 1
+        call: 66
+         Jun 06 19:45:57.078 INFO Calling OverlordChallengeProtocol.get_challenges
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 27, 0, 0, d, ff, d8, 8, 76, 9f, 4c, a8, da, 8d, 8d, ff, 8e, 4e, 73, 49, bb, 77, f5, f6, 84, c6, c4, 7e, 72, 8f, d5, 63, a, d8, 66, 88, 14, 78, c2, 4, 45, 5c, 1f, 9b, 86]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 27, 0, 0, 0, 0, ca]
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 1c, 0, 0, 17, 0, e, ff, d8, 38, 72, 9f, 4c, f8, ea, b5, 7, 9d, 4e, 76, 9e, c1, fe, e4, e7, e4, d2, 57, 56, d]
+modulePACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 1c, 0, 0, 64]
+: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 39
+    session: 146
+     pid: 1002
+      Jun 06 19:45:57.275 INFO Looking for protocol 5007, method 5
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 39
+    session: 146
+     pid: 1002
+      protocol_id: 5007
+       method_id: 5
+        call: 68
+         Jun 06 19:45:57.278 INFO Calling OverlordChallengeProtocol.
+module: dedicated_server::overlord_challenge:101
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 39
+    session: 146
+     pid: 1002
+      protocol_id: 5007
+       method_id: 5
+        call: 68
+         Jun 06 19:45:57.281 ERRO not implemented yet
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 28, 0, 0, d, ff, d8, 68, 70, 9f, 4c, a8, da, 87, 8d, fb, 8e, e, 73, e9, 73, 77, 46, dd, 28, 72, 9d, bc, 72, da, 90, 34, b3, 6b, 64, 3b, 42, 55, 16, 2b, 66, 27, 83, 24, 8b, c7, 6c, e8, f8, 59, 57, ab, ab, cd, 81, 16, bf, 8d, 1c, d9, 12, 50, 45, 97, ea, 28]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 28, 0, 0, 0, 0, cb]
+module: quazal::rmc:350PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 1d, 0, 0, 8c, 0, d, ff, d8, ae, 94, 4e, 26, 92, 35, ba, 67, 42, 5c, 65, 83, 98, 11, bf, 0, a7, a4, ef, aa, 12, 0, d, 17, 25, b0, 32, 1c, d5, 69, 6f, 6d, 8d, 4b, 9f, bf, 2e, 5a, d1, 2f, ca, d6, b7, 94, 1d, 78, c4, 8d, e3, b9, b9, e3, a7, db, 35, 79, a7, c6, 97, 18, a0, e9, 7f, 92, 24, c8, 85, 62, 60, ce, ad, 4c, a, 91, 54, 15, 25, be, 46, 36, e1, f9, dd, 1d, 8c, 8d, 66, 85, c8, 13, ac, 51, bd, 74, 8, 94, df, bf, dc, ad, 66, c3, b5, 48, 5f, af, e8, b2, 7f, 16, 21, 9d, b, 3, 72, a0, 98, c7, 98, 4, 74, cd, 4a, 9b, 7a, f6, a2, b4, 11, f, 9, 32, b2, e4, 68, 76, 1c, 32]
+
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 1d, 0, 0, 65]
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 40
+    session: 146
+     pid: 1002
+      Jun 06 19:45:57.559 INFO Looking for protocol 5002, method 1
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 40
+    session: 146
+     pid: 1002
+      protocol_id: 5002
+       method_id: 1
+        call: 70
+         Jun 06 19:45:57.563 INFO Calling OverlordNewsProtocol.get_news
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 29, 0, 0, f, 96, 44, db, 13, 62, 6b, 50, 5, a2, 6d, fd, 2a, 16, f3, b1, ff, 56, c, f6, 97, 56, cf]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 29, 0, 0, 0, 0, cc]
+module: quazal::rmc:350
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 1e, 0, 0, 22, 0, e, ff, d8, 48, 73, 9f, 4c, c0, 60, d6, 66, 6f, 16, 1b, fe, bd, 73, 16, 1c, e0, a4, 55, a1, 17, 19, 5f, 16, 28, 89, da, 61, 5, 74, a1, 21]
+   PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 1e, 0, 0, 66]
+seq: 41
+    session: 146
+     pid: 1002
+      Jun 06 19:45:57.653 INFO Looking for protocol 29, method 12
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 41
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 71
+         Jun 06 19:45:57.656 INFO Calling UbiAccountManagementProtocol.LookupUbiAccountIDsByPids
+module: dedicated_server::ubi_acc_mgmt:91
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 41
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 71
+         Jun 06 19:45:57.661 INFO Lookup requested for 1 pids. Found 1
+module: dedicated_server::ubi_acc_mgmt:97
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 41
+    session: 146
+     pid: 1002
+      protocol_id: 29
+       method_id: 12
+        call: 71
+         Jun 06 19:45:57.664 INFO Lookup requested for 1 ([1002]) pids. Found 1 ({1002: "SAM"})
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 2a, 0, 0, f, 9a, 44, db, 13, 4e, 64, 50, 5, a2, 66, fd, 2a, 16, f5, b1, 9a, 38, cb, c5, a7, 67, a2, 1f, 5a, bf, f6, 7, 8e, da, 13, 4d, 40, 7c, 3e]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 2a, 0, 0, 0, 0, cd]
+module: quazal::rmc:350
+PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 1f, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 60, 61, 56, 61, 6f, c6, 1b, fe, d1, ff, 56, ec, 14, 96, 46, 47]
+ servicePACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 1f, 0, 0, 67]
+: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 42
+    session: 146
+     pid: 1002
+      Jun 06 19:45:57.677 INFO Looking for protocol 49, method 7
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 42
+    session: 146
+     pid: 1002
+      protocol_id: 49
+       method_id: 7
+        call: 72
+         Jun 06 19:45:57.680 INFO Calling UplayWinProtocol.UplayWelcome
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 2b, 0, 0, d, ff, d8, 8, 75, 9f, 4c, 88, ed, ab, 45, 25, 32, 36, 72, b4, 77, f, ff, 69, 64, 5, f0, 9d, 18, 46, cc, bd, 2b, 1b, 4c, c2, 7a, 7d, b, 44, 22, fb, 7c, 96, 92, ef, de, 17, 39, 91, e4]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 2b, 0, 0, 0, 0, ce]
+module: PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 20, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 60, 61, 56, 65, 6f, 46, 1b, fe, d1, ff, 56, ec, 10, 96, 46, c8]
+quazal::rmc:350PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 20, 0, 0, 68]
+
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 43
+    session: 146
+     pid: 1002
+      Jun 06 19:45:57.701 INFO Looking for protocol 49, method 6
+module: quazal::rmc:361
+ service: sc_bl_secure
+  client: 127.0.0.1:3074
+   seq: 43
+    session: 146
+     pid: 1002
+      protocol_id: 49
+       method_id: 6
+        call: 73
+         Jun 06 19:45:57.705 INFO Calling UplayWinProtocol.GetRewardsPurchased
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 2c, 0, 0, d, ff, d8, 8, 73, 9f, 4c, 88, ed, a7, 45, 65, 32, 36, 72, b4, 77, 4f, ff, ed, 4f, 4f, f0, ef, 2e, e2, b9, b, 93, 42, 59, c, ea, fd, 47, c5, 1d, fd, 17, a5, c4, f9, af, cc, 89]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 2c, 0, 0, 0, 0, cf]
+module:PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 21, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 60, 61, 56, 63, 6f, 66, 1b, fe, d1, ff, 56, ec, 24, 96, 5b, 10]
+ quazal::rmc:350
+PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 21, 0, 0, 69]
+ 
+PACKET: [3f, 31, 32, 92, 97, 3d, 21, 97, 2d, 0, 0, d, ff, d8, 68, 77, 9f, 4c, 88, eb, af, 45, 65, aa, 8e, e3, 39, a0, 67, a5, 9d, 87, 30, 22, ce, 76, af, 69, 9, 4e, f7, 0, d2, 7c, b8, a8, 54, ea, 9b, 95, ef, 90, a6, 89]
+PACKET SEND: [31, 3f, 4a, 6, 1, 0, b3, 7f, 2d, 0, 0, 0, 0, d0]
+module: PACKET SEND: [31, 3f, 72, 6, 1, 0, b3, 7f, 22, 0, 0, 16, 0, e, ff, d8, 38, 70, 9f, 4c, 60, 62, 56, 67, 6f, 66, 1b, fe, d1, ff, 56, ed, c4, 96, 42, 9e]
+quazal::rmc:350PACKET: [3f, 31, a, 92, 97, 3d, 21, 97, 22, 0, 0, 6a]
+
+PACKET: [3f, 31, 24, 92, 97, 3d, 21, 97, 1, 0, 63]
+PACKET SEND: [31, 3f, 4c, 6, 1, 0, b3, 7f, 1, 0, 0, 0, a6]
+PACKET: [3f, 31, 24, 92, 97, 3d, 21, 97, 2, 0, 64]
+PACKET SEND: [31, 3f, 4c, 6, 1, 0, b3, 7f, 2, 0, 0, 0, a7]
+PACKET: [3f, 31, 24, 92, 97, 3d, 21, 97, 3, 0, 65]
+PACKET SEND: [31, 3f, 4c, 6, 1, 0, b3, 7f, 3, 0, 0, 0, a8]
+PACKET: [3f, 31, 24, 92, 97, 3d, 21, 97, 4, 0, 66]
+PACKET SEND: [31, 3f, 4c, 6, 1, 0, b3, 7f, 4, 0, 0, 0, a9]
+PACKET: [3f, 31, 24, 92, 97, 3d, 21, 97, 5, 0, 67]
+PACKET SEND: [31, 3f, 4c, 6, 1, 0, b3, 7f, 5, 0, 0, 0, aa]

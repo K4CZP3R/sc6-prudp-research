@@ -5,6 +5,8 @@ import { cryptKey } from "../helpers/crypt";
 import { StreamType } from "./stream-type.enum";
 import { Adbuf } from "../helpers/adbuf";
 import pako from "pako";
+import { colored, colors } from "../helpers/colors";
+import { byte } from "../helpers/types";
 
 function getChecksumKey(streamType: StreamType) {
   const accessKey = "yl4NG7qZ";
@@ -48,6 +50,41 @@ export class QPacket {
 
   static fromBytes(buf: Adbuf): [QPacket, number] {
     return [new QPacket(buf), buf.offset];
+  }
+
+  toString() {
+    return colored(this, {
+      exlucdeProps: [
+        "sourceBuf",
+        "typeFlag",
+        "packetType",
+        "source",
+        "destination",
+        "payload",
+      ],
+      customProps: [
+        // {
+        //   key: "source",
+        //   value:
+        //     this.source.port === 15
+        //       ? "client"
+        //       : this.source.port === 1
+        //       ? "server"
+        //       : this.source.port.toString(),
+        // },
+        // {
+        //   key: "destination",
+        //   value:
+        //     this.destination.port === 15
+        //       ? "client"
+        //       : this.destination.port === 1
+        //       ? "server"
+        //       : this.destination.port.toString(),
+        // },
+        { key: "packetType", value: PacketType[this.packetType] },
+        { key: "payload", value: this.payload?.toString("hex") ?? "" },
+      ],
+    });
   }
 
   toJSON() {
@@ -128,7 +165,8 @@ export class QPacket {
 
   public toBuffer() {
     let data = this.toDataBuffer();
-    data.addU32L(
+    data.addU8(
+      // changed from 16LE to 8
       this.calcChecksumFromData(
         getChecksumKey(this.destination.streamType),
         data.realBuffer
@@ -139,11 +177,11 @@ export class QPacket {
 
   public toDataBuffer() {
     let data = new Adbuf(Buffer.from([]));
-    data.add(this.source.toBuffer());
-    data.add(this.destination.toBuffer());
-    const pt = this.packetType;
-    data.add(Buffer.from([pt | (this.flags.bits << 3)]));
-    data.addU8(this.sessionId);
+    data.addU8(this.source.toByte());
+    data.addU8(this.destination.toByte());
+    const typeFlag = byte(this.packetType | (this.flags.bits << 3));
+    data.addU8(typeFlag);
+    data.addU8(byte(this.sessionId));
 
     // Convert signature to LE bytes
     const signature = Buffer.alloc(4);
@@ -153,6 +191,7 @@ export class QPacket {
     // Convert sequence to LE bytes
     const sequence = Buffer.alloc(2);
     sequence.writeUInt16LE(this.sequence, 0);
+
     data.add(sequence);
 
     switch (this.packetType) {
@@ -192,7 +231,8 @@ export class QPacket {
       let s = payload.length;
       // Save it as u16 le bytes
       let sBuf = Buffer.alloc(2);
-      sBuf.writeUInt16LE(s, 0);
+
+      sBuf.writeUInt16BE(s, 0);
       data.add(sBuf);
     }
 

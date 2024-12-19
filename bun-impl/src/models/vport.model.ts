@@ -1,4 +1,6 @@
 import type { Adbuf } from "../helpers/adbuf";
+import { colored } from "../helpers/colors";
+import { byte, type Byte } from "../helpers/types";
 import { StreamType } from "./stream-type.enum";
 
 export class VPort {
@@ -11,6 +13,10 @@ export class VPort {
     this.streamType = val >> 4;
   }
 
+  toString() {
+    return colored(this);
+  }
+
   toJSON() {
     return {
       port: this.port,
@@ -18,9 +24,7 @@ export class VPort {
     };
   }
 
-  toBuffer(): Buffer {
-    // Convert streamType to u8
-    const streamType = (this.streamType << 4) | this.port;
-    return Buffer.from([streamType]);
+  toByte(): Byte {
+    return byte((this.streamType << 4) | this.port);
   }
 }

@@ -28,6 +28,7 @@ export class Adbuf {
     subbuf.writeUInt8(val, 0);
     this.buf = Buffer.concat([this.buf, subbuf]);
   }
+
   addU16(val: number) {
     let subbuf = Buffer.alloc(2);
     subbuf.writeUInt16BE(val, 0);
@@ -139,5 +140,9 @@ export class Adbuf {
 
   readU8At(index: number) {
     return this.buf.readUInt8(index);
+  }
+
+  toString() {
+    return this.buf.toString("hex");
   }
 }
